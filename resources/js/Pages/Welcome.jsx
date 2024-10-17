@@ -1,4 +1,5 @@
 import ApplicationLogo from '@/Components/ApplicationLogo';
+import MasulineWash from '@/Components/MasulineWash';
 import { Head, Link } from '@inertiajs/react';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
@@ -23,13 +24,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     src="https://laravel.com/assets/img/welcome/background.svg"
                 /> */}
                 <div className="relative flex min-h-screen flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
-                    <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl">
-                        <header className="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
-                            <div className="flex lg:col-start-2 lg:justify-center">
+                    <div className="relative w-full px-6 header border">
+                        <header className="grid grid-cols-2 items-center gap-2 py-5 lg:grid-cols-3 border">
+                            <div className="flex lg:col-start-1 lg:justify-center border">
                                 {/* LOGO */}
-                                <ApplicationLogo />
+                                <Link href='/'>
+                                    <ApplicationLogo />
+                                </Link>
                             </div>
-                            <nav className="-mx-3 flex flex-1 justify-end">
+                            <nav className="flex flex-1 justify-end lg:col-start-2 lg:col-span-2 border">
                                 {auth.user ? (
                                     <Link
                                         href={route('dashboard')}
@@ -52,10 +55,50 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         >
                                             Register
                                         </Link> */}
+                                        <Link
+                                            href='/'
+                                            className="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                        >
+                                            Home
+                                        </Link>
+                                        <Link
+                                            href='/'
+                                            className="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                        >
+                                            Products
+                                        </Link>
+                                        <Link
+                                            href='/'
+                                            className="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                        >
+                                            About Us
+                                        </Link>
+                                        <Link
+                                            href='/'
+                                            className="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                        >
+                                            Services
+                                        </Link>
+                                        <Link
+                                            href='/'
+                                            className="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                        >
+                                            Contact Us
+                                        </Link>
                                     </>
                                 )}
                             </nav>
+                            <div className='content'>
+                                <div className='border'>
+                                    <h3>GE</h3>
+                                    <h1>Gentlemans Essential Masculine Wash</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>
+                                </div>
+                                <MasulineWash />
+                            </div>
                         </header>
+                    </div>
+                    <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl">
 
                         <main className="mt-6">
                             <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">

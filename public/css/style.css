@@ -23,5 +23,9 @@
     --secondary-font: 'Poppins', sans-serif; /* Sub Font */
 }
 .bg-color{
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background-color: var(--oxford-blue);
+}
+.header{
+    background-color: var(--mikado-yellow);
 }
