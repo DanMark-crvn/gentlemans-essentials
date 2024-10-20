@@ -5,12 +5,12 @@ export default function ApplicationLogo(props) {
     return (        
         <>
             <div className='flex-col justify-center items-center hidden lg:flex'>
-                <img {...props} src={PrimaryLogo} alt="GE Logo" className="w-1/3 block" />
-                <img {...props} src={InTextLogo} alt="GE-Name" className="w-2/5 block" />
+                <img {...props} src={PrimaryLogo} alt="GE Logo" className="border" style={{ maxWidth: '110px', height: 'auto' }} />
+                <img {...props} src={InTextLogo} alt="GE-Name" className="border" style={{ maxWidth: '110px', height: 'auto' }} />
             </div>
             <div className='flex lg:hidden justify-center items-center'>
-                <img {...props} src={PrimaryLogo} alt="GE Logo" className="w-1/3 block" />
-                <img {...props} src={InTextLogo} alt="GE-Name" className="w-3/4 block" />
+                <img {...props} src={PrimaryLogo} alt="GE Logo" className="border" style={{ maxWidth: '110px', height: 'auto' }} />
+                <img {...props} src={InTextLogo} alt="GE-Name" className="border" style={{ maxWidth: '110px', height: 'auto' }} />
             </div>
         </>
     );
