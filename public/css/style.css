@@ -29,3 +29,52 @@
 .header{
     background-color: var(--mikado-yellow);
 }
+.primary-font{
+    font-family: var(--primary-font);
+}
+.secondary-font{
+    font-family: var(--secondary-font);
+}
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px auto;
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        right: 0;
+        background: white;
+        width: 100%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
+/* NAVBAR END */
