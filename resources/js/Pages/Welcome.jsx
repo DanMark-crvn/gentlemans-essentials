@@ -6,17 +6,13 @@ import { Head, Link } from '@inertiajs/react';
 import { useEffect, useState } from 'react';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
-    const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const [navVisible, setNavVisible] = useState(false);
 
-    // Function to toggle the mobile menu
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
 
     // Function to handle resizing
     const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768); // Adjust this value for the desired breakpoint (768px for tablet)
+        setIsMobile(window.innerWidth <= 987); // Adjust this value for the desired breakpoint (768px for tablet 798)
     };
 
     // useEffect to handle resizing and update `isMobile`
@@ -27,6 +23,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+     // Function to toggle nav visibility
+     const toggleNav = () => {
+        setNavVisible(!navVisible);
+    };
 
     return (
         <BootstrapLayout>
@@ -45,13 +46,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                     </div>
                                     {/* Show Switch on mobile and tablet sizes */}
                                     {isMobile ? (
-                                        <div onClick={toggleMenu}>
-                                            <Switch />
+                                        <div className="cursor-pointer">
+                                            <Switch navVisible={navVisible} toggleNav={toggleNav} />
                                         </div>
                                     ) : null}
 
-                                    {/* Show links conditionally */}
-                                    <nav className={`navbar ${isMobile ? (menuOpen ? 'd-block' : 'd-none') : 'd-flex'}`} id="navbar">
+                                    <nav className={`navbar ${isMobile ? 'mobile' : ''} ${isMobile && !navVisible ? 'd-none' : 'd-flex'}`} id="navbar">
                                         {auth.user ? (
                                             <Link
                                                 href={route('dashboard')}
@@ -60,38 +60,17 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                                 Dashboards
                                             </Link>
                                         ) : (
-                                            <>
+                                            // <>
+                                            ['Home', 'Products', 'About Us', 'Services', 'Contact Us'].map((item) => (
                                                 <Link
+                                                    key={item}
                                                     href="/"
-                                                    className="btn btn-outline-black rounded px-3 py-2 me-2"
+                                                    className={`btn btn-outline-black rounded px-3 py-2 me-2 ${isMobile ? 'text-white' : ''}`}
                                                 >
-                                                    Home
+                                                    {item}
                                                 </Link>
-                                                <Link
-                                                    href="/"
-                                                    className="btn btn-outline-black rounded px-3 py-2 me-2"
-                                                >
-                                                    Products
-                                                </Link>
-                                                <Link
-                                                    href="/"
-                                                    className="btn btn-outline-black rounded px-3 py-2 me-2"
-                                                >
-                                                    About Us
-                                                </Link>
-                                                <Link
-                                                    href="/"
-                                                    className="btn btn-outline-black rounded px-3 py-2 me-2"
-                                                >
-                                                    Services
-                                                </Link>
-                                                <Link
-                                                    href="/"
-                                                    className="btn btn-outline-black rounded px-3 py-2 me-2"
-                                                >
-                                                    Contact Us
-                                                </Link>
-                                            </>
+                                            ))
+                                            // </>
                                         )}
                                     </nav>
                                 </div>
@@ -115,7 +94,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         </main>
 
                         <footer className="py-16 text-center text-sm text-black dark:text-white/70">
-                            Laravel v{laravelVersion} (PHP v{phpVersion})
+                            Gentle Essentials{laravelVersion} (PHP v{phpVersion})
                         </footer>
                     </div>
                 </div>

@@ -56,6 +56,17 @@
     margin: 4px auto;
     background-color: black;
 }
+/* NAVBAR STYLE ON SHORT SCREEN SIZE */
+.navbar.mobile{
+    position: absolute;
+    top: 120px; /* Adjust this to control the distance below the Switch 120 */
+    right: 45px !important; /*45*/
+    border: 1px solid green;
+    background-color: var(--rich-black);
+    border-radius: 5px;
+    width: 150px;
+    z-index: 10; /* Ensure it's above other content when visible */
+}
 
 @media (max-width: 768px) {
     .navbar {
