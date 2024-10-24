@@ -65,7 +65,18 @@
     background-color: var(--rich-black);
     border-radius: 5px;
     width: 150px;
-    z-index: 10; /* Ensure it's above other content when visible */
+    z-index: 99; /* Ensure it's above other content when visible */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    /* pointer-events: none; Prevents interaction when hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease;  /* Smooth transition */
+}
+/* When the navbar is active (for example, when it should be shown) */
+.navbar.mobile.active {
+    opacity: 1; /* Fully visible */
+    /* pointer-events: auto;  Allows interaction */
+    z-index: 99;
+    visibility: visible;
 }
 
 @media (max-width: 768px) {
