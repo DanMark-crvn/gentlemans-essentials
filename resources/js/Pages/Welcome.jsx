@@ -37,7 +37,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     <div className="relative w-full px-6 header">
                         <header class="container py-3 border">
                             <div class="row align-items-center g-2">
-                                <div className='flex justify-content-around align-items-center' data-aos="fade-down">
+                                <div className='flex justify-content-around align-items-center z-1' data-aos="fade-down">
                                     <div class="">
                                         {/* <!-- LOGO --> */}
                                         <Link href="/">
@@ -51,7 +51,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         </div>
                                     ) : null}
 
-                                    <nav className={`navbar ${isMobile ? 'mobile' : ''} ${navVisible ? 'active' : ''} ${isMobile && !navVisible ? 'd-none' : 'd-flex'}`} id="navbar">
+                                    <nav className={`navbar ${isMobile ? 'mobile position-absolute' : ''} ${navVisible ? 'active' : ''} ${isMobile && !navVisible ? 'd-none' : 'd-flex'}`} id="navbar">
                                         {auth.user ? (
                                             <Link
                                                 href={route('dashboard')}
@@ -75,7 +75,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                     </nav>
                                 </div>
                                 <div className="col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-center py-3">
-                                    <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start" data-aos="fade-right">
+                                    <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start z-0" data-aos="fade-right">
                                         <h3 className='primary-font'>GE</h3>
                                         <h1 className='secondary-font'>Gentlemans Essential Masculine Wash</h1>
                                         <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>

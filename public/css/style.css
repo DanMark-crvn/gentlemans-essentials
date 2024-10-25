@@ -58,14 +58,12 @@
 }
 /* NAVBAR STYLE ON SHORT SCREEN SIZE */
 .navbar.mobile{
-    position: absolute;
-    top: 120px; /* Adjust this to control the distance below the Switch 120 */
-    right: 45px !important; /*45*/
-    border: 1px solid green;
+    /* position: absolute; */
+    top: 80px; /* Adjust this to control the distance below the Switch 120 */
+    right: 25px !important; /*45*/
     background-color: var(--rich-black);
     border-radius: 5px;
     width: 150px;
-    z-index: 99; /* Ensure it's above other content when visible */
     opacity: 0; /* Initially hidden */
     visibility: hidden;
     /* pointer-events: none; Prevents interaction when hidden */
@@ -74,8 +72,7 @@
 /* When the navbar is active (for example, when it should be shown) */
 .navbar.mobile.active {
     opacity: 1; /* Fully visible */
-    /* pointer-events: auto;  Allows interaction */
-    z-index: 99;
+    pointer-events: auto;  /*Allows interaction*/
     visibility: visible;
 }
 
