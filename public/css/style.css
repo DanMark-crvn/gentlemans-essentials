@@ -36,7 +36,9 @@
     font-family: var(--secondary-font);
 }
 
-
+.prod{
+    color: var(--mikado-yellow);
+}
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -80,6 +82,9 @@
     animation-duration: 2s !important; /* Adjust to your desired duration */
 }
 .animate__tada{
+    animation-duration: 4s !important; /* Adjust to your desired duration */
+}
+.animate__bounce{
     animation-duration: 4s !important; /* Adjust to your desired duration */
 }
 
