@@ -24,7 +24,7 @@
 }
 .bg-color{
     /* background-color: var(--background-color); */
-    background-color: var(--oxford-blue);
+    background-color: var(--background-color);
 }
 .header{
     background-color: var(--mikado-yellow);
@@ -74,6 +74,13 @@
     opacity: 1; /* Fully visible */
     pointer-events: auto;  /*Allows interaction*/
     visibility: visible;
+}
+/* Add this in your custom CSS file */
+.animate__pulse {
+    animation-duration: 2s !important; /* Adjust to your desired duration */
+}
+.animate__tada{
+    animation-duration: 4s !important; /* Adjust to your desired duration */
 }
 
 @media (max-width: 768px) {

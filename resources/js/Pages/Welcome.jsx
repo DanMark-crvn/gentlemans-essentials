@@ -29,6 +29,24 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
         setNavVisible(!navVisible);
     };
 
+     // Function to handle scrolling to the specified section
+     const scrollToSection = (event, sectionId) => {
+        event.preventDefault(); // Prevent default link behavior
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
+        }
+    };
+    
+    const navItems = [
+        { name: 'Home', href: '/' },
+        { name: 'Products', href: 'products' },
+        { name: 'About Us', href: 'about' },
+        { name: 'Services', href: 'services' },
+        { name: 'Contact Us', href: 'contact' }
+    ];
+
+
     return (
         <BootstrapLayout>
             <Head title="Welcome" />
@@ -61,13 +79,14 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             </Link>
                                         ) : (
                                             // <>
-                                            ['Home', 'Products', 'About Us', 'Services', 'Contact Us'].map((item) => (
+                                            navItems.map((item) => (
                                                 <Link
-                                                    key={item}
-                                                    href="/"
+                                                    key={item.name}
+                                                    href={item.href}
+                                                    onClick={(e) => item.href !== '/' && item.href !== '/products' && scrollToSection(e, item.href)} // Only apply scrolling to specific links
                                                     className={`btn btn-outline-black rounded px-3 py-2 me-2 ${isMobile ? 'text-white' : ''}`}
                                                 >
-                                                    {item}
+                                                    {item.name}
                                                 </Link>
                                             ))
                                             // </>
@@ -80,16 +99,35 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         <h1 className='secondary-font'>Gentlemans Essential Masculine Wash</h1>
                                         <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>
                                     </div>
-                                    <MasulineWash />
+                                    <MasulineWash animated={true} />
                                 </div>
                             </div>
                         </header>
                     </div>
-                    <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl">
-
-                        <main className="mt-6">
-                            <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
-                                
+                    <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl border border-primary mt-20">
+                        <main className="mt-6 border border-success">
+                            <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 mb-4 border border-danger" id='about'>
+                                <MasulineWash animated={false}  />
+                                <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start border border-info" data-aos="fade-up" data-aos-duration="1500">
+                                    <h1 className='secondary-font'>Gentlemans Essential Masculine Wash</h1>
+                                    <p className='secondary-font'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                                    <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>
+                                </div>
+                            </div>
+                            <div className='border border-danger d-flex flex-column justify-content-center align-items-center text-center pt-64 pb-64 mt-4' id='products'> 
+                                {/* Products section */} 
+                                <h3 className='secondary-font'>PRODUCTS</h3>
+                                <p className='secondary-font'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                            </div>
+                            <div className='border border-danger d-flex flex-column justify-content-center align-items-center pt-64 pb-64 mt-4' id='services'> 
+                                {/* Services section */} 
+                                <h3 className='secondary-font'>SERVICES</h3>
+                                <p className='secondary-font'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                            </div>
+                            <div className='border border-danger d-flex flex-column justify-content-center align-items-center pt-64 pb-64 mt-4' id='contact'> 
+                                {/* Contact section */} 
+                                <h3 className='secondary-font'>CONTACT</h3>
+                                <p className='secondary-font'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
                             </div>
                         </main>
 
