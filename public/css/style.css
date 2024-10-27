@@ -39,6 +39,10 @@
 .prod{
     color: var(--mikado-yellow);
 }
+
+.footer{
+    background-color: var(--mikado-yellow);
+}
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -109,3 +113,31 @@
     }
 }
 /* NAVBAR END */
+
+
+/* CONTACT */
+.custom-hover:hover{
+    border-color: var(--mikado-yellow) !important; /* Bootstrap warning color */
+    background-color: var(--mikado-yellow) !important;
+    color: var(--rich-black) !important; /* Adjust text color if needed */
+}
+
+.w-3-5 {
+    width: 65% !important; /* 3/5 - 60% of the width */
+}
+.mwGold{
+    width: 500px !important;
+    height: auto !important;
+}
+
+@media (max-width: 1022px) {
+    .w-3-5 {
+        width: 100% !important; /* Full width on small screens */
+    }
+    .mwGold{
+        width: 350px !important;
+        height: auto !important;
+    }
+}
+
+/* END CONTACT */
