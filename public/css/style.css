@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+*{
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
 :root{
     --primary-color: #3490dc; /* Blue */
     --secondary-color: #ffed4a; /* Yellow */
@@ -141,3 +146,33 @@
 }
 
 /* END CONTACT */
+
+/* FOOTER */
+.list-unstyled, li, a{
+    color: #333 !important;
+}
+@media (max-width: 1022px) {
+    .footerLinks{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerLinksDivOne{
+        width: auto !important;
+        text-align: center !important;
+    }
+    .footerLinksDivTwo{
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
+@media (max-width: 500px) {
+    .footerLinksDivTwo{
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        /* background-color: #3490dc; */
+    }
+}
+/* END-FOOTER */

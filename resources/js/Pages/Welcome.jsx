@@ -1,5 +1,6 @@
 import ApplicationLogo from '@/Components/ApplicationLogo';
 import BootstrapLayout from '@/Components/BootstrapLayout';
+import Footer from '@/Components/Footer';
 import MasculineWashFrontAndBack from '@/Components/MasculineWashFrontAndBack';
 import MasculineWashGold from '@/Components/MasculineWashGold';
 import MasulineWash from '@/Components/MasulineWash';
@@ -156,8 +157,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </div>
                 </div>
             </div>
-            <footer className="footer py-16 text-center text-sm text-black dark:text-white/70">
-                Gentle Essentials{laravelVersion} (PHP v{phpVersion})
+            <footer className="footer py-16 text-center text-sm text-black dark:text-white/70 border border-primary">
+                {/* Gentle Essentials{laravelVersion} (PHP v{phpVersion}) */}
+                <Footer />
             </footer>
         </BootstrapLayout>
     );
