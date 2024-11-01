@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -23,5 +24,23 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+// Add your route
+Route::get('/product', function () {
+    return Inertia::render('Product');
+})->name('product');
+
+Route::get('/about', function () {
+    return Inertia::render('About');
+})->name('about');
+
+Route::get('/services', function () {
+    return Inertia::render('Services');
+})->name('services');
+
+Route::get('/contact', function () {
+    return Inertia::render('Contact/Contact');
+})->name('contact');
+
 
 require __DIR__.'/auth.php';

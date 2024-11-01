@@ -5,7 +5,7 @@ import MasulineWash from '@/Components/MasulineWash';
 import Switch from './Switch';
 import { Link } from '@inertiajs/react';
 
-export default function Header(auth) {
+export default function Header({auth = {}, onNavClick, currentPage}) {
     const [isMobile, setIsMobile] = useState(false);
     const [navVisible, setNavVisible] = useState(false);
 
@@ -28,25 +28,41 @@ export default function Header(auth) {
         setNavVisible(!navVisible);
     };
 
-    // Function to handle scrolling to the specified section
-    const scrollToSection = (event, sectionId) => {
-        event.preventDefault(); // Prevent default link behavior
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
-        }
-    };
-
     const navItems = [
         { name: 'Home', href: '/' },
-        { name: 'Product', href: 'product' },
-        { name: 'About Us', href: 'about' },
-        { name: 'Services', href: 'services' },
-        { name: 'Contact Us', href: 'contact' }
+        { name: 'Product', href: '/product' },
+        { name: 'About Us', href: '/about' },
+        { name: 'Services', href: '/services' },
+        { name: 'Contact Us', href: '/contact' }
     ];
+    // Dynamic content based on currentPage
+    const pageContent = {
+        home: {
+            title: 'Gentlemans Essential Masculine Wash',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.',
+        },
+        product: {
+            title: 'Product',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.',
+        },
+        about: {
+            title: 'About Us',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.',
+        },
+        services: {
+            title: 'Services',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.',
+        },
+        contact: {
+            title: 'Contact',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.',
+        },
+    };
+
+    const currentContent = pageContent[currentPage] || pageContent.home; // Default to home if not found
 
   return (
-    <BootstrapLayout>
+    <>
         <header className="container py-3">
             <div className="row align-items-center g-2">
                 <div className='flex justify-content-around align-items-center z-1' data-aos="fade-down">
@@ -77,7 +93,10 @@ export default function Header(auth) {
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    onClick={(e) => item.href !== '/' && item.href !== '/product' && scrollToSection(e, item.href)} // Only apply scrolling to specific links
+                                    onClick={(e) => {
+                                        e.preventDefault(); // Prevent default link behavior
+                                        onNavClick(item.name); // Update the activePage state
+                                    }}
                                     className={`btn btn-outline-black rounded px-3 py-2 me-2 ${isMobile ? 'text-white' : ''}`}
                                 >
                                     {item.name}
@@ -88,15 +107,16 @@ export default function Header(auth) {
                     </nav>
                 </div>
                 <div className="col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-center py-3">
-                    <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start z-0" data-aos="fade-right">
+                    <div className="text-heading p-3 col-lg-6 d-flex flex-column text-center text-lg-start z-0" data-aos="fade-right">
+                        {/* FOR HOME */}
                         <h3 className='primary-font'>GE</h3>
-                        <h1 className='secondary-font'>Gentlemans Essential Masculine Wash</h1>
-                        <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>
+                        <h1 className='secondary-font'>{currentContent.title}</h1>
+                        <p className='secondary-font'>{currentContent.description}</p>
                     </div>
                     <MasulineWash animated={true} />
                 </div>
             </div>
         </header>
-    </BootstrapLayout>
+    </>
   )
 }

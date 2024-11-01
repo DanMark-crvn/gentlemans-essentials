@@ -1,18 +1,30 @@
 import ApplicationLogo from '@/Components/ApplicationLogo';
+import BootstrapLayout from '@/Components/BootstrapLayout';
+import Footer from '@/Components/Footer';
+import Header from '@/Components/Header';
 import { Link } from '@inertiajs/react';
+import { useState } from 'react';
+import React from 'react';
 
-export default function GuestLayout({ children }) {
+export default function GuestLayout({ children, setActivePage }) {    
     return (
-        <div className="flex min-h-screen flex-col items-center bg-gray-100 pt-6 sm:justify-center sm:pt-0 dark:bg-gray-900">
-            <div className='border'>
-                <Link href="/">
-                    <ApplicationLogo className="border" />
-                </Link>
+        <BootstrapLayout>
+            <div className="bg-color overflow-hidden">
+                <div className="relative flex min-h-screen flex-col items-center justify-center selection:bg-[#FFC300] selection:text-white">
+                    <div className="relative w-full px-6 header">
+                        <Header onNavClick={(page) => setActivePage(page)} currentPage="home" />
+                    </div>
+                    <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl mt-4">
+                        <main className="mt-6">
+                            {children}
+                        </main>
+                    </div>
+                </div>
             </div>
-
-            <div className="mt-6 w-full overflow-hidden bg-white px-6 py-4 shadow-md sm:max-w-md sm:rounded-lg dark:bg-gray-800">
-                {children}
-            </div>
-        </div>
+            <footer className="footer py-16 text-center text-sm text-black dark:text-white/70">
+                {/* Gentle Essentials{laravelVersion} (PHP v{phpVersion}) */}
+                <Footer />
+            </footer>
+        </BootstrapLayout>
     );
 }

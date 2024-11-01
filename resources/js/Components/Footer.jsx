@@ -3,7 +3,7 @@ import ApplicationLogo from './ApplicationLogo';
 
 export default function Footer() {
     return (
-        <footer className="py-4 mt-5">
+        <div className="py-4 mt-5">
             <div className="container">
                 <div className="row text-center text-md-left footerLinks">
                     <div className="col-md-4 mb-4 mb-md-0 footerLinksDivOne">
@@ -26,7 +26,7 @@ export default function Footer() {
                                 <i className="bi bi-linkedin"></i>
                             </a>
                             <a href="#" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
-                                <i class="bi bi-tiktok"></i>
+                                <i className="bi bi-tiktok"></i>
                             </a>
                         </div>
                     </div>
@@ -79,6 +79,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     );
 }
