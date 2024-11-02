@@ -11,8 +11,8 @@ export default defineConfig({
         react(),
     ],
     server: {
-        // host: '192.168.18.30', //home Ip
-        host: '192.168.1.19', //home Kuya Ip
+        host: '192.168.18.30', //home Ip
+        // host: '192.168.1.19', //home Kuya Ip
         port: 5173,      // Default Vite port, change if necessary
     }
 });

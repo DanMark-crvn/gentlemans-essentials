@@ -6,6 +6,7 @@ import { Head, Link } from '@inertiajs/react';
 import { useState } from 'react';
 import Contact from './Contact/Contact';
 import GuestLayout from '@/Layouts/GuestLayout';
+import Product from './Product/Product';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here
@@ -59,7 +60,10 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             )}
             {activePage === 'Product' && (
-                <div> {/* Product Content Here */} </div>
+                <div className='border border-primary'> 
+                    {/* Product Content Here */} 
+                    <Product />
+                </div>
             )}
             {activePage === 'About Us' && (
                 <div> {/* About Us Content Here */} </div>

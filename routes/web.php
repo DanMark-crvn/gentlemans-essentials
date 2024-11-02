@@ -27,7 +27,7 @@ Route::middleware('auth')->group(function () {
 
 // Add your route
 Route::get('/product', function () {
-    return Inertia::render('Product');
+    return Inertia::render('Product/Product');
 })->name('product');
 
 Route::get('/about', function () {

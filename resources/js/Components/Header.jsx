@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
+import AOS from 'aos';
 import BootstrapLayout from './BootstrapLayout'
 import ApplicationLogo from './ApplicationLogo'
 import MasulineWash from '@/Components/MasulineWash';
 import Switch from './Switch';
 import { Link } from '@inertiajs/react';
 
-export default function Header({auth = {}, onNavClick, currentPage}) {
+export default function Header({auth = {}, onNavClick}) {
     const [isMobile, setIsMobile] = useState(false);
     const [navVisible, setNavVisible] = useState(false);
+    const [selectedPage, setSelectedPage] = useState('Home'); // Track selected page
 
     // Function to handle resizing
     const handleResize = () => {
@@ -34,32 +36,47 @@ export default function Header({auth = {}, onNavClick, currentPage}) {
         { name: 'About Us', href: '/about' },
         { name: 'Services', href: '/services' },
         { name: 'Contact Us', href: '/contact' }
-    ];
-    // Dynamic content based on currentPage
-    const pageContent = {
-        home: {
-            title: 'Gentlemans Essential Masculine Wash',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.',
-        },
-        product: {
-            title: 'Product',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.',
-        },
-        about: {
-            title: 'About Us',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.',
-        },
-        services: {
-            title: 'Services',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.',
-        },
-        contact: {
-            title: 'Contact',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.',
-        },
+    ];    
+
+     // Function to handle navigation click
+     const handleNavClick  = (pageName) => {
+        setSelectedPage(pageName); // Update selected page
     };
 
-    const currentContent = pageContent[currentPage] || pageContent.home; // Default to home if not found
+    // Reinitialize AOS each time selectedPage changes
+    useEffect(() => {
+        AOS.refresh();
+    }, [selectedPage]);
+
+
+    // Define content for each page
+    const pageContent = {
+        "Home": {
+            title: "GE",
+            subtitle: "Gentleman's Essential Masculine Wash",
+            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla."
+        },
+        "Product": {
+            title: "Our Product",
+            subtitle: "Explore Our Premium Products",
+            description: "Discover high-quality products tailored to meet your needs and preferences."
+        },
+        "About Us": {
+            title: "About Us",
+            subtitle: "Learn More About Our Story",
+            description: "We are committed to delivering the best experience and value to our customers."
+        },
+        "Services": {
+            title: "Our Services",
+            subtitle: "What We Offer",
+            description: "We provide a range of exceptional services to support your lifestyle."
+        },
+        "Contact Us": {
+            title: "Contact Us",
+            subtitle: "Get in Touch",
+            description: "We'd love to hear from you. Contact us for any inquiries or assistance."
+        }
+    };
 
   return (
     <>
@@ -96,6 +113,7 @@ export default function Header({auth = {}, onNavClick, currentPage}) {
                                     onClick={(e) => {
                                         e.preventDefault(); // Prevent default link behavior
                                         onNavClick(item.name); // Update the activePage state
+                                        handleNavClick(item.name);
                                     }}
                                     className={`btn btn-outline-black rounded px-3 py-2 me-2 ${isMobile ? 'text-white' : ''}`}
                                 >
@@ -106,12 +124,15 @@ export default function Header({auth = {}, onNavClick, currentPage}) {
                         )}
                     </nav>
                 </div>
-                <div className="col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-center py-3">
+                <div 
+                    key={selectedPage}  // Key to trigger re-render on page change
+                    className="col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-center py-3"
+                >
                     <div className="text-heading p-3 col-lg-6 d-flex flex-column text-center text-lg-start z-0" data-aos="fade-right">
                         {/* FOR HOME */}
-                        <h3 className='primary-font'>GE</h3>
-                        <h1 className='secondary-font'>{currentContent.title}</h1>
-                        <p className='secondary-font'>{currentContent.description}</p>
+                        <h3 className='primary-font'>{pageContent[selectedPage].title}</h3>
+                        <h1 className='secondary-font'>{pageContent[selectedPage].subtitle}</h1>
+                        <p className='secondary-font'>{pageContent[selectedPage].description}</p>
                     </div>
                     <MasulineWash animated={true} />
                 </div>

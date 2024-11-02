@@ -31,9 +31,12 @@
     /* background-color: var(--background-color); */
     background-color: var(--background-color);
 }
+/* HEADER */
 .header{
     background-color: var(--mikado-yellow);
 }
+/* END HEADER */
+
 .primary-font{
     font-family: var(--primary-font);
 }
