@@ -138,6 +138,26 @@
     height: auto !important;
 }
 
+.contactIcon{
+    background-color: var(--mikado-yellow);
+    border-radius: 8px;
+}
+
+/* Custom styles for form inputs */
+.form-control:focus {
+    border-color: var(--mikado-yellow) !important; /* Change focus border color */
+    box-shadow: 0 0 0 0.50rem rgba(255, 204, 0, 0.25) !important; /* Change focus shadow */
+}
+
+.valid-feedback {
+    color: var(--ge-logo-yellow) !important; /* Change valid feedback text color */
+}
+.form-control:valid{
+    color: var(--ge-logo-black) !important;
+    border-color: var(--ge-logo-yellow) !important;
+}
+
+
 @media (max-width: 1022px) {
     .w-3-5 {
         width: 100% !important; /* Full width on small screens */

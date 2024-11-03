@@ -80,7 +80,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             )}
             {activePage === 'Contact Us' && (
-                <div className='border border-warning'> 
+                <div className=''> 
                     {/* Contact Us Content Here */} 
                     <Contact />
                 </div>
