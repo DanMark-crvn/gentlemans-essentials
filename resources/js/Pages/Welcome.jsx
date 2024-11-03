@@ -7,6 +7,8 @@ import { useState } from 'react';
 import Contact from './Contact/Contact';
 import GuestLayout from '@/Layouts/GuestLayout';
 import Product from './Product/Product';
+import About from './About/About';
+import Services from './Services/Services';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here
@@ -66,10 +68,16 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             )}
             {activePage === 'About Us' && (
-                <div> {/* About Us Content Here */} </div>
+                <div> 
+                    {/* About Us Content Here */} 
+                    <About />
+                </div>
             )}
             {activePage === 'Services' && (
-                <div> {/* Services Content Here */} </div>
+                <div> 
+                    {/* Services Content Here */} 
+                    <Services />
+                </div>
             )}
             {activePage === 'Contact Us' && (
                 <div className='border border-warning'> 

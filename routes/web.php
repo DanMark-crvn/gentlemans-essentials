@@ -31,11 +31,11 @@ Route::get('/product', function () {
 })->name('product');
 
 Route::get('/about', function () {
-    return Inertia::render('About');
+    return Inertia::render('About/About');
 })->name('about');
 
 Route::get('/services', function () {
-    return Inertia::render('Services');
+    return Inertia::render('Services/Services');
 })->name('services');
 
 Route::get('/contact', function () {
