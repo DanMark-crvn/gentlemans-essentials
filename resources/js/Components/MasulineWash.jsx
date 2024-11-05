@@ -2,10 +2,10 @@ import MWFront from '../../imgs/GE Masculine Wash-resize.png'
 import BootstrapLayout from './BootstrapLayout'
 
 
-export default function MasulineWash({animated = true, ...props}) {
+export default function MasulineWash({animated = true, loading = false, ...props}) {
   return (
     <BootstrapLayout>
-      {animated ? (
+      {/* {animated ? (
         //With Animation
         <div className='col-lg-4 justify-items-center' data-aos="fade-left" data-aos-duration="3000">
           <img {...props} src={MWFront} alt="Masculine-Wash-Front" className='animate__animated animate__pulse animate__infinite p-0' style={{ maxWidth: '230px', height: 'auto' }} />
@@ -21,6 +21,38 @@ export default function MasulineWash({animated = true, ...props}) {
             style={{ maxWidth: '230px', height: 'auto' }} 
           />
         </div>
+      )} */}
+      
+      {/* Loader image */}
+      {loading ? (
+        <div className='justify-items-center'>
+          <img 
+            {...props} 
+            src={MWFront} 
+            alt="Loading-Masculine-Wash" 
+            className='loader-image animate__animated animate__flash animate__infinite'
+            style={{ maxWidth: '70px', height: 'auto' }} 
+          />
+        </div>
+      ):(
+        // Check for animated prop and render accordingly
+        animated ? (
+          //With Animation
+          <div className='col-lg-4 justify-items-center' data-aos="fade-left" data-aos-duration="3000">
+            <img {...props} src={MWFront} alt="Masculine-Wash-Front" className='animate__animated animate__pulse animate__infinite p-0' style={{ maxWidth: '230px', height: 'auto' }} />
+          </div>
+        ) : (
+          //Without animation
+          <div className='col-lg-4 justify-items-center' data-aos="zoom-in" data-aos-duration="1500">
+            <img 
+              {...props} 
+              src={MWFront} 
+              alt="Masculine-Wash-Front" 
+              className='p-0 animate__animated animate__tada animate__infinite'  // Removed animation classes here
+              style={{ maxWidth: '230px', height: 'auto' }} 
+            />
+          </div>
+        )
       )}
     </BootstrapLayout>
   )

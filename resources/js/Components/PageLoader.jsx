@@ -1,20 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import BootstrapLayout from './BootstrapLayout';
+import MasulineWash from './MasulineWash';
 
-export default function PageLoader({ message = "Gentleman's" }) {
+export default function PageLoader() {
   return (
     <BootstrapLayout>
-        <div className="pageLoader">
-        <div className="loader text-center w-full">
-            <span>{message}</span>
-            <span>{message}</span>
+      <div className="pageLoader">
+        <div className="loader d-flex justify-content-center align-items-center container">
+          {/* Setting loading to true to show the loader image */}
+          <MasulineWash loading={true} />
         </div>
-        </div>
+      </div>
     </BootstrapLayout>
   );
 }
-
-PageLoader.propTypes = {
-  message: PropTypes.string,
-};
