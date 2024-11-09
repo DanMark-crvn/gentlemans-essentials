@@ -170,6 +170,15 @@
 
 /* END CONTACT */
 
+/* FOR ABOUT */
+.image-container{
+    width: 100%;
+}
+.text-primary a{
+    color: var(--mikado-yellow) !important;
+}
+/* END FOR ABOUT */
+
 /* FOOTER */
 .list-unstyled, li, a{
     color: #333 !important;
