@@ -21,7 +21,7 @@ export default function GuestLayout({ children, setActivePage }) {
                     </div>
                 </div>
             </div>
-            <footer className="footer py-16 text-center text-sm text-black dark:text-white/70">
+            <footer className="footer py-8 text-center text-sm text-black dark:text-white/70">
                 {/* Gentle Essentials{laravelVersion} (PHP v{phpVersion}) */}
                 <Footer />
             </footer>

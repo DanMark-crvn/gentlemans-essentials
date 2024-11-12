@@ -7,7 +7,7 @@ export default function Services() {
     // <div>Services</div>
     <>
       <Head title="Services" />
-      <div className='border border-primary'> 
+      <div className=''> 
         {/* Home Content Here */} 
         <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 mb-4 pt-10 pb-10">
           <MasulineWash animated={false}  />

@@ -17,7 +17,7 @@ export default function Contact() {
   return (
     <>
       <Head title="Contact" />
-      <div className=''> 
+      <div className='' id='contact'> 
         {/* Home Content Here */} 
         <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 mb-4 pt-10 pb-10">
           <MasulineWash animated={false}  />

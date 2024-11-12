@@ -3,7 +3,7 @@ import ApplicationLogo from './ApplicationLogo';
 
 export default function Footer() {
     return (
-        <div className="py-4 mt-5">
+        <div className="">
             <div className="container">
                 <div className="row text-center text-md-left footerLinks">
                     <div className="col-md-4 mb-4 mb-md-0 footerLinksDivOne">

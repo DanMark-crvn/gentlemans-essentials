@@ -9,6 +9,7 @@ import GuestLayout from '@/Layouts/GuestLayout';
 import Product from './Product/Product';
 import About from './About/About';
 import Services from './Services/Services';
+import GEHome from '@/Components/GEHome';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here
@@ -29,8 +30,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </div>
                     <div className='d-flex flex-column justify-content-center align-items-center text-center pt-20 pb-20'> 
                         <MasculineWashGold />
-                        <MasculineWashFrontAndBack />
-                        <p className='secondary-font p-10 border border-secondary rounded'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                        {/* <MasculineWashFrontAndBack /> */}
+                        <GEHome />
+                        <p className='secondary-font p-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
                     </div>
                     <div className='d-flex flex-column justify-content-center align-items-center text-center pt-64 pb-64 mt-4'> 
                         <h3 className='primary-font'>SERVICES</h3>
@@ -62,7 +64,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             )}
             {activePage === 'Product' && (
-                <div className='border border-primary'> 
+                <div className=''> 
                     {/* Product Content Here */} 
                     <Product />
                 </div>
