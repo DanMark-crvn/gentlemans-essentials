@@ -8,12 +8,12 @@ export default function ApplicationLogo({footer = true, ...props}) {
             {footer ? (
                 <div>
                     <div className='flex-col justify-center items-center hidden lg:flex'>
-                        <img {...props} src={PrimaryLogo} alt="GE Logo" className="" style={{ maxWidth: '110px', height: 'auto' }} />
-                        <img {...props} src={InTextLogo} alt="GE-Name" className="" style={{ maxWidth: '110px', height: 'auto' }} />
+                        <img {...props} src={PrimaryLogo} alt="GE Logo" className="" style={{ maxWidth: '110px', height: 'auto', filter: 'invert(1)' }} />
+                        <img {...props} src={InTextLogo} alt="GE-Name" className="" style={{ maxWidth: '110px', height: 'auto', filter: 'invert(1)' }} />
                     </div>
                     <div className='flex lg:hidden justify-center items-center'>
-                        <img {...props} src={PrimaryLogo} alt="GE Logo" className="" style={{ maxWidth: '110px', height: 'auto' }} />
-                        <img {...props} src={InTextLogo} alt="GE-Name" className="" style={{ maxWidth: '110px', height: 'auto' }} />
+                        <img {...props} src={PrimaryLogo} alt="GE Logo" className="" style={{ maxWidth: '110px', height: 'auto', filter: 'invert(1)' }} />
+                        <img {...props} src={InTextLogo} alt="GE-Name" className="" style={{ maxWidth: '110px', height: 'auto', filter: 'invert(1)' }} />
                     </div>
                 </div>
             ):(

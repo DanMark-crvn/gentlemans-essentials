@@ -35,6 +35,9 @@
 .header{
     background-color: var(--mikado-yellow);
 }
+.header-container-nav{
+    background-color: var(--rich-black);
+}
 /* END HEADER */
 
 .primary-font{

@@ -80,10 +80,10 @@ export default function Header({auth = {}, onNavClick}) {
 
   return (
     <>
-        <header className="container py-3">
+        <header className="container pt-36">
             <div className="row align-items-center g-2">
-                <div className='flex justify-content-around align-items-center z-1' data-aos="fade-down">
-                    <div className="">
+                <div className='header-container-nav flex justify-content-around align-items-center z-3 position-fixed -top-2 left-0' data-aos="fade-down">
+                    <div className="py-1">
                         {/* <!-- LOGO --> */}
                         <Link href="/">
                             <ApplicationLogo />
@@ -115,7 +115,7 @@ export default function Header({auth = {}, onNavClick}) {
                                         onNavClick(item.name); // Update the activePage state
                                         handleNavClick(item.name);
                                     }}
-                                    className={`btn btn-outline-black rounded px-3 py-2 me-2 ${isMobile ? 'text-white' : ''}`}
+                                    className={`btn btn-outline-black rounded text-white px-3 py-2 me-2 ${isMobile ? 'text-white' : ''}`}
                                 >
                                     {item.name}
                                 </Link>
