@@ -36,7 +36,7 @@
     background-color: var(--mikado-yellow);
 }
 .header-container-nav{
-    background-color: var(--rich-black);
+    background-color: var(--ge-logo-black);
 }
 /* END HEADER */
 
@@ -64,6 +64,18 @@
 .navbar-toggle {
     display: none;
     cursor: pointer;
+}
+/* Add this to your CSS or within a <style> tag in the component */
+.navbar .active {
+    border-bottom: 2px solid var(--mikado-yellow); /* Blue underline for active link */
+    padding-bottom: 5px; /* Optional: space between text and the underline */
+    transition: border-bottom 0.5s ease, padding-bottom 0.5s ease !important; /* Smooth transition for active link underline */
+}
+.navbar .navbarLinks {
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+.navbar .navbarLinks:hover{
+    color: var(--mikado-yellow) !important;
 }
 
 .navbar-icon {

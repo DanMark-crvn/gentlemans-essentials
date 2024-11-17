@@ -5,6 +5,7 @@ import ApplicationLogo from './ApplicationLogo'
 import MasulineWash from '@/Components/MasulineWash';
 import Switch from './Switch';
 import { Link } from '@inertiajs/react';
+import GEWrapper from './GEWrapper';
 
 export default function Header({auth = {}, onNavClick}) {
     const [isMobile, setIsMobile] = useState(false);
@@ -54,7 +55,7 @@ export default function Header({auth = {}, onNavClick}) {
         "Home": {
             title: "GE",
             subtitle: "Gentleman's Essential Masculine Wash",
-            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla."
+            description: "Confidence Below The Belt"
         },
         "Product": {
             title: "Our Product",
@@ -79,8 +80,8 @@ export default function Header({auth = {}, onNavClick}) {
     };
 
   return (
-    <>
-        <header className="container pt-36">
+    <GEWrapper>
+        <header className="container">
             <div className="row align-items-center g-2">
                 <div className='header-container-nav flex justify-content-around align-items-center z-3 position-fixed -top-2 left-0' data-aos="fade-down">
                     <div className="py-1">
@@ -115,7 +116,7 @@ export default function Header({auth = {}, onNavClick}) {
                                         onNavClick(item.name); // Update the activePage state
                                         handleNavClick(item.name);
                                     }}
-                                    className={`btn btn-outline-black rounded text-white px-3 py-2 me-2 ${isMobile ? 'text-white' : ''}`}
+                                    className={`navbarLinks text-white px-3 py-2 me-2 ${isMobile ? 'text-white' : ''} ${selectedPage === item.name ? 'active' : ''}`}
                                 >
                                     {item.name}
                                 </Link>
@@ -126,18 +127,19 @@ export default function Header({auth = {}, onNavClick}) {
                 </div>
                 <div 
                     key={selectedPage}  // Key to trigger re-render on page change
-                    className="col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-center py-3"
+                    className="col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-start py-3"
                 >
-                    <div className="text-heading p-3 col-lg-6 d-flex flex-column text-center text-lg-start z-0" data-aos="fade-right">
-                        {/* FOR HOME */}
-                        <h3 className='primary-font'>{pageContent[selectedPage].title}</h3>
-                        <h1 className='secondary-font'>{pageContent[selectedPage].subtitle}</h1>
-                        <p className='secondary-font'>{pageContent[selectedPage].description}</p>
-                    </div>
-                    <MasulineWash animated={true} />
+                        <div className="text-heading p-3 col-lg-6 d-flex flex-column text-center text-lg-start z-0 text-white" data-aos="fade-right">
+                            {/* FOR HOME */}
+                            <h3 className='primary-font'>{pageContent[selectedPage].title}</h3>
+                            <h1 className='secondary-font'>{pageContent[selectedPage].subtitle}</h1>
+                            <p className='secondary-font'>{pageContent[selectedPage].description}</p>
+                        </div>
+                        {/* <MasulineWash animated={true} />
+                        <GEWrapper /> */}
                 </div>
             </div>
         </header>
-    </>
+    </GEWrapper>
   )
 }

@@ -14,10 +14,11 @@ export default function Product() {
           {/* <MasulineWash animated={false}  /> */}
           <MasculineWashFrontAndBack />
           <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
-            <h1 className='secondary-font'>Product</h1>
-            <p className='secondary-font'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+            <h1 className='secondary-font'>Gentleman’s Essentials Masculine Wash</h1>
+            <p className='secondary-font'>is a gentle cleanser used for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of the area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
+            <p className='secondary-font'>Gentleman’s masculine wash is FDA approved and dermatologically tested.</p>
             {/* Add the button here */}
-            <Link href={route('contact')} className="btn btn-warning mt-4">Get Yours Now</Link>
+            <Link href="#contact" className="btn btn-warning mt-4">Get Yours Now</Link>
           </div>
         </div>
       </div>

@@ -13,19 +13,19 @@ export default function Footer() {
                             Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant.
                         </p>
                         <div className="d-flex gap-3 justify-content-center">
-                            <a href="#" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
+                            <a href="https://www.facebook.com/thegentlemansessentials.ph/" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-facebook"></i>
                             </a>
-                            <a href="#" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
+                            {/* <a href="#" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-twitter"></i>
-                            </a>
-                            <a href="#" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
+                            </a> */}
+                            <a href="https://www.instagram.com/thegentlemansessentials.ph/" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-instagram"></i>
                             </a>
-                            <a href="#" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
+                            {/* <a href="#" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-linkedin"></i>
-                            </a>
-                            <a href="#" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
+                            </a> */}
+                            <a href="https://www.tiktok.com/@gentlemansessentialsph" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-tiktok"></i>
                             </a>
                         </div>
