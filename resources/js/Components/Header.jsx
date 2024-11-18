@@ -80,10 +80,11 @@ export default function Header({auth = {}, onNavClick}) {
     };
 
   return (
-    <GEWrapper>
-        <header className="container">
+    
+    <>
+        <header className="container position-relative z-3" data-aos="fade-down">
             <div className="row align-items-center g-2">
-                <div className='header-container-nav flex justify-content-around align-items-center z-3 position-fixed -top-2 left-0' data-aos="fade-down">
+                <div className='header-container-nav flex justify-content-around align-items-center'>
                     <div className="py-1">
                         {/* <!-- LOGO --> */}
                         <Link href="/">
@@ -125,21 +126,10 @@ export default function Header({auth = {}, onNavClick}) {
                         )}
                     </nav>
                 </div>
-                <div 
-                    key={selectedPage}  // Key to trigger re-render on page change
-                    className="col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-start py-3"
-                >
-                        <div className="text-heading p-3 col-lg-6 d-flex flex-column text-center text-lg-start z-0 text-white" data-aos="fade-right">
-                            {/* FOR HOME */}
-                            <h3 className='primary-font'>{pageContent[selectedPage].title}</h3>
-                            <h1 className='secondary-font'>{pageContent[selectedPage].subtitle}</h1>
-                            <p className='secondary-font'>{pageContent[selectedPage].description}</p>
-                        </div>
-                        {/* <MasulineWash animated={true} />
-                        <GEWrapper /> */}
-                </div>
             </div>
         </header>
-    </GEWrapper>
+        {/* Pass selectedPage and pageContent to GEWrapper */}
+        <GEWrapper selectedPage={selectedPage} pageContent={pageContent} />
+    </>
   )
 }

@@ -1,6 +1,7 @@
 import ApplicationLogo from '@/Components/ApplicationLogo';
 import BootstrapLayout from '@/Components/BootstrapLayout';
 import Footer from '@/Components/Footer';
+import GEWrapper from '@/Components/GEWrapper';
 import Header from '@/Components/Header';
 import { Link } from '@inertiajs/react';
 import { useState } from 'react';
@@ -14,6 +15,7 @@ export default function GuestLayout({ children, setActivePage }) {
                     <div className="relative w-full header">
                         <Header onNavClick={(page) => setActivePage(page)} currentPage="home" />
                     </div>
+                    
                     <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl mt-4">
                         <main className="mt-6">
                             {children}
