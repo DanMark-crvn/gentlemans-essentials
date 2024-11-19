@@ -16,7 +16,12 @@ export default function GuestLayout({ children, setActivePage }) {
                         <Header onNavClick={(page) => setActivePage(page)} currentPage="home" />
                     </div>
                     
-                    <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl mt-4">
+                    {/* <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl mt-4 border border-danger">
+                        <main className="mt-6 w-full">
+                            {children}
+                        </main>
+                    </div> */}
+                    <div className="relative w-full mt-4 border border-danger">
                         <main className="mt-6">
                             {children}
                         </main>

@@ -10,6 +10,7 @@ import Product from './Product/Product';
 import About from './About/About';
 import Services from './Services/Services';
 import GEHome from '@/Components/GEHome';
+import WrapperGE from '../../imgs/GEWrapper.png';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here
@@ -18,27 +19,42 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
         <GuestLayout setActivePage={setActivePage}>
             <Head title="Welcome" />
             {activePage === 'Home' && (
-                <div className='home'> 
-                    {/* Home Content Here */} 
-                    <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 mb-4 pt-10 pb-10">
-                        <MasulineWash animated={false}  />
-                        <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
-                            <h1 className='secondary-font'>Gentlemans Essential Masculine Wash</h1>
-                            <p className='secondary-font'>a gentle cleanser used for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of the area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
-                            {/* <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p> */}
+                <div className='home w-full d-flex flex-column justify-content-center align-items-center'> 
+                    {/* //TODO: Home Content Here */} 
+
+                    {/* //? SECTION 1 */}
+                    <div className='border border-warning w-full d-flex justify-content-center mb-4'>
+                        <div className="max-w-2xl px-6 lg:max-w-7xl d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 pt-10 pb-10 border border-success">
+                            <MasulineWash animated={false}  />
+                            <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
+                                <h1 className='secondary-font'>Gentlemans Essential Masculine Wash</h1>
+                                <p className='secondary-font'>a gentle cleanser used for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of the area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
+                                {/* <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p> */}
+                            </div>
                         </div>
                     </div>
-                    <div className='d-flex flex-column justify-content-center align-items-center text-center pt-20 pb-20'> 
-                        <MasculineWashGold />
-                        {/* <MasculineWashFrontAndBack /> */}
-                        <GEHome />
-                        <p className='secondary-font p-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                    {/* SECTION 1 END */}
+
+                    {/* //? SECTION 2 */}
+                    <div className='w-full d-flex justify-content-center'>
+                        <div className='max-w-2xl px-6 lg:max-w-7xl d-flex flex-column justify-content-center align-items-center text-center pt-20 pb-20'> 
+                            <MasculineWashGold />
+                            {/* <MasculineWashFrontAndBack /> */}
+                            <GEHome />
+                            <p className='secondary-font p-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                        </div>
                     </div>
-                    <div className='d-flex flex-column justify-content-center align-items-center text-center pt-64 pb-64 mt-4'> 
+                    {/* SECTION 2 END */}
+
+                    {/* //? SECTION 3 */}
+                    <div className='max-w-2xl px-6 lg:max-w-7xl d-flex flex-column justify-content-center align-items-center text-center pt-64 pb-64 mt-4'> 
                         <h3 className='primary-font'>SERVICES</h3>
                         <p className='secondary-font'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
                     </div>
-                    <div className='d-flex flex-column justify-content-center align-items-center text-center pt-64 pb-64 mt-4 px-0 px-md-5'> 
+                    {/* SECTION 3 END */}
+
+                    {/* //? SECTION 4 */}
+                    <div className='max-w-2xl px-6 lg:max-w-7xl d-flex flex-column justify-content-center align-items-center text-center pt-64 pb-64 mt-4 px-md-5'> 
                         <h3 className='primary-font px-0 px-md-5'>Subscribe to Newsletter!</h3>
                         <p className='secondary-font px-0 px-md-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
                         <div className='w-3-5 d-flex justify-content-center align-items-center'>
@@ -61,6 +77,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </div>
                         </div>
                     </div>
+                    {/* SECTION 4 END */}
                 </div>
             )}
             {activePage === 'Product' && (
