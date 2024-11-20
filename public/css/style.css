@@ -160,6 +160,49 @@
 }
 /* NAVBAR END */
 
+/* HOME */
+.ge-wet-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ge-wet-background {
+  /* Initially, show background image only on small screens */
+  /* background-image: url('/imgs/WETGE.png') !important; */
+  background-size: cover;
+  background-position: center;
+  display: block;  /* Show background div */
+  filter: blur(5px);
+  width: 100%;
+  height: 100%;
+}
+
+/* Medium tablets, portrait mode, and tablets in landscape mode (up to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for medium tablets */
+    .ge-wet-image {
+        filter: blur(5px);
+    }
+}
+/* Hide the background image on larger screens and show the image */
+@media (min-width: 768px) {
+    .ge-wet-background {
+      display: none;  /* Hide the background image on larger screens */
+    }
+  
+    .ge-wet-image {
+      display: block;  /* Show the image on larger screens */
+    }
+  }
+  
+  /* Optional: Hide the image on smaller screens */
+  @media (max-width: 767px) {
+    .ge-wet-image {
+      display: none;  /* Hide the image on small screens */
+    }
+  }
+/* HOME END */
 
 /* CONTACT */
 .custom-hover:hover{
