@@ -13,6 +13,8 @@ import GEHome from '@/Components/GEHome';
 import WrapperGE from '../../imgs/GEWrapper.png';
 import GEWet from '@/Components/GEWet';
 import WETGE from '../../imgs/WETGE.png';
+import GEBlack from '@/Components/GEBlack';
+import GEWhite from '@/Components/GEWhite';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here
@@ -25,7 +27,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* //TODO: Home Content Here */} 
 
                     {/* //? SECTION 1 */}
-                    <div className='border border-warning w-full d-flex justify-content-center mb-4'>
+                    <div className='border border-warning w-full d-flex justify-content-center h-screen mb-4'>
                         <div className="max-w-2xl px-6 lg:max-w-7xl d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 pt-10 pb-10 border border-success">
                             <MasulineWash animated={false}  />
                             <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
@@ -52,9 +54,13 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* SECTION 2 END */}
 
                     {/* //? SECTION 3 */}
-                    <div className='max-w-2xl px-6 lg:max-w-7xl d-flex flex-column justify-content-center align-items-center text-center pt-64 pb-64 mt-4'> 
-                        <h3 className='primary-font'>SERVICES</h3>
-                        <p className='secondary-font'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                    <div className='sectionThree w-full d-flex justify-content-evenly h-screen backdrop-blur-md bg-slate-400'>
+                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center border border-info'> 
+                            <GEWhite />
+                        </div>
+                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center border border-info'> 
+                            <GEBlack />
+                        </div>
                     </div>
                     {/* SECTION 3 END */}
 
