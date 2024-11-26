@@ -29,19 +29,19 @@ export default function Contact() {
               <div className="d-flex align-items-center p-2">
                 <i className="bi bi-geo-alt contactIcon d-flex align-items-center fs-5 p-3"></i>
                 <div className="ms-3">
-                  <p className="mb-0 fs-6">123 Raymouth Rd. Baltemoer, London 3910</p>
+                  <p className="mb-0 fs-6">E1 Scandia Suites, Silang, Cavite</p>
                 </div>
               </div>
               <div className="d-flex align-items-center p-2">
                 <i className="bi bi-envelope contactIcon d-flex align-items-center fs-5 p-3"></i>
                 <div className="ms-3">
-                  <p className="mb-0 fs-6">name@example.com</p>
+                  <p className="mb-0 fs-6">gentlemansessentialsofficial@gmail.com</p>
                 </div>
               </div>
               <div className="d-flex align-items-center p-2">
                 <i className="bi bi-telephone contactIcon d-flex align-items-center fs-5 p-3"></i>
                 <div className="ms-3">
-                  <p className="mb-0 fs-6">+1 234 5678 91011</p>
+                  <p className="mb-0 fs-6">+639 54 386 4923</p>
                 </div>
               </div>
             </div>

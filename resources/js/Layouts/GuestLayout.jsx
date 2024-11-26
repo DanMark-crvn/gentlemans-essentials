@@ -21,7 +21,7 @@ export default function GuestLayout({ children, setActivePage }) {
                             {children}
                         </main>
                     </div> */}
-                    <div className="relative w-full mt-4 border border-danger">
+                    <div className="relative w-full mt-4">
                         <main className="mt-6">
                             {children}
                         </main>

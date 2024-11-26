@@ -10,7 +10,7 @@ export default function AboutPicture(props) {
                 {...props} 
                 src={AboutPic} 
                 alt="About Picture" 
-                className='p-0 object-fit-fill border rounded-5'  // Removed animation classes here
+                className='p-0 object-fit-fill rounded-0 rounded-lg-3'
                 style={{ maxWidth: '400px', height: 'auto' }} 
             />
         </div>

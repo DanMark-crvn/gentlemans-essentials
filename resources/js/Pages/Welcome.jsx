@@ -15,6 +15,8 @@ import GEWet from '@/Components/GEWet';
 import WETGE from '../../imgs/WETGE.png';
 import GEBlack from '@/Components/GEBlack';
 import GEWhite from '@/Components/GEWhite';
+import GEHomeBlack from '../../imgs/GEBlack.png'
+import GEHomeWhite from '../../imgs/GEWhite.jpg'
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here
@@ -27,8 +29,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* //TODO: Home Content Here */} 
 
                     {/* //? SECTION 1 */}
-                    <div className='border border-warning w-full d-flex justify-content-center h-screen mb-4'>
-                        <div className="max-w-2xl px-6 lg:max-w-7xl d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 pt-10 pb-10 border border-success">
+                    <div className='w-full d-flex justify-content-center lg:h-screen mb-4'>
+                        <div className="max-w-2xl px-6 lg:max-w-7xl d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 pt-10 pb-10">
                             <MasulineWash animated={false}  />
                             <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
                                 <h1 className='secondary-font'>Gentlemans Essential Masculine Wash</h1>
@@ -54,11 +56,29 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* SECTION 2 END */}
 
                     {/* //? SECTION 3 */}
-                    <div className='sectionThree w-full d-flex justify-content-evenly h-screen backdrop-blur-md bg-slate-400'>
-                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center border border-info'> 
+                    <div className='sectionThree w-full d-flex justify-content-evenly h-screen backdrop-blur-sm'>
+                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center relative'>
+                            {/* Pseudo-element for blurred background */}
+                            <div 
+                                className='absolute inset-0 bg-cover bg-center' 
+                                style={{ 
+                                    backgroundImage: `url(${GEHomeWhite})`, 
+                                    filter: 'blur(4px)', 
+                                    zIndex: '-1'  // Ensures the background stays behind the content
+                                }}
+                            ></div> 
                             <GEWhite />
                         </div>
-                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center border border-info'> 
+                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center relative'> 
+                            {/* Pseudo-element for blurred background */}
+                            <div 
+                                className='absolute inset-0 bg-cover bg-center' 
+                                style={{ 
+                                    backgroundImage: `url(${GEHomeBlack})`, 
+                                    filter: 'blur(4px)', 
+                                    zIndex: '-1'  // Ensures the background stays behind the content
+                                }}
+                            ></div> 
                             <GEBlack />
                         </div>
                     </div>
@@ -92,7 +112,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             )}
             {activePage === 'Product' && (
-                <div className=''> 
+                <div className='lg:h-screen d-flex justify-content-center align-items-center'> 
                     {/* Product Content Here */} 
                     <Product />
                 </div>
@@ -104,7 +124,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             )}
             {activePage === 'Services' && (
-                <div> 
+                <div className='lg:h-screen d-flex justify-content-center align-items-center'> 
                     {/* Services Content Here */} 
                     <Services />
                 </div>
