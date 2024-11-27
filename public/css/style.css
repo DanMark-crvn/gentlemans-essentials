@@ -4,6 +4,7 @@
 *{
     list-style: none !important;
     text-decoration: none !important;
+    scroll-behavior: smooth !important;
 }
 
 :root{
@@ -306,6 +307,22 @@
     color: var(--mikado-yellow) !important;
 }
 /* END FOR ABOUT */
+
+/* FOR PRODUCT */
+/* Default image size for smaller screens */
+.prod-img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;
+  }
+  
+  /* Larger screen (e.g., greater than 1200px) */
+  @media (min-width: 1200px) {
+    .prod-img {
+      width: 60%; /* Resize image for larger screens */
+      max-width: none; /* Allow resizing beyond 100% */
+    }
+  }
+/* END PRODUCT */
 
 /* FOOTER */
 .list-unstyled, li, a{

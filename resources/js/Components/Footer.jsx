@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ApplicationLogo from './ApplicationLogo';
 
-export default function Footer() {
+export default function Footer({onNavClick, currentPage}) {
+    const handleNavClick = (pageName) => {
+        if (onNavClick) {
+            onNavClick(pageName); // Notify parent about the selected page
+        }
+    };
+
     return (
         <div className="">
             <div className="container">
@@ -31,38 +37,38 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className='col-md-8 d-flex justify-content-around footerLinksDivTwo'>
-                        <div className="col-md-2 mb-4 mb-md-0 py-8">
-                            <h5>About us</h5>
+                        <div className="col-md-2 mb-4 mb-md-0 py-md-5 py-0">
+                            <h5>About</h5>
                             <ul className="list-unstyled">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Product</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("About Us")}>About Us</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("Product")}>Product</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("Services")}>Services</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Contact Us</a></li>
                             </ul>
                         </div>
-                        <div className="col-md-2 mb-4 mb-md-0 py-8">
+                        <div className="col-md-2 mb-4 mb-md-0 py-md-5 py-0">
                             <h5>Support</h5>
                             <ul className="list-unstyled">
-                                <li><a href="#">Support</a></li>
-                                <li><a href="#">Knowledge base</a></li>
-                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Support</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Knowledge base</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Lorem</a></li>
                             </ul>
                         </div>
-                        <div className="col-md-2 mb-4 mb-md-0 py-8">
+                        <div className="col-md-2 mb-4 mb-md-0 py-md-5 py-0">
                             <h5>Jobs</h5>
                             <ul className="list-unstyled">
                                 <li><a href="#">Jobs</a></li>
-                                <li><a href="#">Our team</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("About Us")}>Our team</a></li>
                                 <li><a href="#">Leadership</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                             </ul>
                         </div>
-                        <div className="col-md-2 mb-4 mb-md-0 py-8">
+                        <div className="col-md-2 mb-4 mb-md-0 py-md-5 py-0">
                             <h5>Product</h5>
                             <ul className="list-unstyled">
-                                <li><a href="#">GentleMan's</a></li>
-                                <li><a href="#">Essentials</a></li>
-                                <li><a href="#">Masculine Wash</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("Product")}>GentleMan's</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("Product")}>Essentials</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("Product")}>Masculine Wash</a></li>
                             </ul>
                         </div>
                     </div>

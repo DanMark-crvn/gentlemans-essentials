@@ -21,6 +21,7 @@ import GEHomeWhite from '../../imgs/GEWhite.jpg'
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here
     const [activePage, setActivePage] = useState('Home');
+
     return (
         <GuestLayout setActivePage={setActivePage}>
             <Head title="Welcome" />
@@ -57,7 +58,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
                     {/* //? SECTION 3 */}
                     <div className='sectionThree w-full d-flex justify-content-evenly h-screen backdrop-blur-sm'>
-                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center relative'>
+                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center relative'  data-aos="fade-right">
                             {/* Pseudo-element for blurred background */}
                             <div 
                                 className='absolute inset-0 bg-cover bg-center' 
@@ -69,7 +70,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             ></div> 
                             <GEWhite />
                         </div>
-                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center relative'> 
+                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center relative'  data-aos="fade-left"> 
                             {/* Pseudo-element for blurred background */}
                             <div 
                                 className='absolute inset-0 bg-cover bg-center' 
@@ -112,9 +113,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             )}
             {activePage === 'Product' && (
-                <div className='lg:h-screen d-flex justify-content-center align-items-center'> 
+                <div className='d-flex flex-column justify-content-center align-items-center gap-3'> 
                     {/* Product Content Here */} 
-                    <Product />
+                    <Product setActivePage={setActivePage} />
                 </div>
             )}
             {activePage === 'About Us' && (

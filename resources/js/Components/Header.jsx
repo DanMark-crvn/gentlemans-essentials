@@ -7,10 +7,15 @@ import Switch from './Switch';
 import { Link } from '@inertiajs/react';
 import GEWrapper from './GEWrapper';
 
-export default function Header({auth = {}, onNavClick}) {
+export default function Header({auth = {}, onNavClick, currentPage }) {
     const [isMobile, setIsMobile] = useState(false);
     const [navVisible, setNavVisible] = useState(false);
-    const [selectedPage, setSelectedPage] = useState('Home'); // Track selected page
+    const [selectedPage, setSelectedPage] = useState(currentPage); // Track selected page
+
+    // Synchronize the selectedPage state with currentPage from props
+    useEffect(() => {
+        setSelectedPage(currentPage);
+    }, [currentPage]);
 
     // Function to handle resizing
     const handleResize = () => {
@@ -42,6 +47,7 @@ export default function Header({auth = {}, onNavClick}) {
      // Function to handle navigation click
      const handleNavClick  = (pageName) => {
         setSelectedPage(pageName); // Update selected page
+        onNavClick(pageName); // Notify parent component
     };
 
     // Reinitialize AOS each time selectedPage changes
