@@ -1,4 +1,5 @@
 import GEMasculineWashHome from '../../imgs/HomeGE.jpg'
+import ProductVideo from '../../imgs/Original/GE presents Masculine Wash (draft).mp4'
 // import GEMasculineWashHome from '../../imgs/GEHome.png'
 // import GEMasculineWashHome from '../../imgs/GEHome1.png'
 
@@ -9,11 +10,14 @@ export default function GEHome(props) {
     <>
       <div className='d-flex flex-column container justify-content-center align-items-center p-10'>
         <div className='d-flex justify-content-center' data-aos="zoom-in-up" data-aos-duration="3000">
-          <img 
+          <video 
             {...props} 
-            src={GEMasculineWashHome} 
-            alt="Masculine-Wash-Home" 
-            className='img-fluid prod-img' 
+            src={ProductVideo} 
+            poster={GEMasculineWashHome} // Thumbnail image
+            alt="Masculine-Wash-Product" 
+            controls
+            loop
+            className='img-fluid prod-img rounded-lg' 
           />
         </div>
         <div className='p-2'>

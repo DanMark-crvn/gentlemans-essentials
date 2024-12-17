@@ -6,6 +6,11 @@ import MasulineWash from '@/Components/MasulineWash';
 import Switch from './Switch';
 import { Link } from '@inertiajs/react';
 import GEWrapper from './GEWrapper';
+import HomeImage from '../../imgs/Original/GEArt 1.png';
+import ProductImage from '../../imgs/Original/GEArt 6.png';
+import AboutImage from '../../imgs/Original/GEArt 7.png';
+import ServicesImage from '../../imgs/Original/Artboard 3 copy.png';
+import ContactImage from '../../imgs/Original/GEArt 1.png';
 
 export default function Header({auth = {}, onNavClick, currentPage }) {
     const [isMobile, setIsMobile] = useState(false);
@@ -61,27 +66,32 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
         "Home": {
             title: "GE",
             subtitle: "Gentleman's Essential Masculine Wash",
-            description: "Confidence Below The Belt"
+            description: "Confidence Below The Belt",
+            image: HomeImage
         },
         "Product": {
             title: "Our Product",
             subtitle: "Explore Our Premium Products",
-            description: "Discover high-quality products tailored to meet your needs and preferences."
+            description: "Discover high-quality products tailored to meet your needs and preferences.",
+            image: ProductImage
         },
         "About Us": {
             title: "About Us",
             subtitle: "Learn More About Our Story",
-            description: "We are committed to delivering the best experience and value to our customers."
+            description: "We are committed to delivering the best experience and value to our customers.",
+            image: AboutImage
         },
         "Services": {
             title: "Our Services",
             subtitle: "What We Offer",
-            description: "We provide a range of exceptional services to support your lifestyle."
+            description: "We provide a range of exceptional services to support your lifestyle.",
+            image: ServicesImage
         },
         "Contact Us": {
             title: "Contact Us",
             subtitle: "Get in Touch",
-            description: "We'd love to hear from you. Contact us for any inquiries or assistance."
+            description: "We'd love to hear from you. Contact us for any inquiries or assistance.",
+            image: ContactImage
         }
     };
 

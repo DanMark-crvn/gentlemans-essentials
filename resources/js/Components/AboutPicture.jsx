@@ -1,4 +1,5 @@
-import AboutPic from '../../imgs/About.jpg'
+// import AboutPic from '../../imgs/About.jpg'
+import AboutPic from '../../imgs/Original/Artboard 4 copy 2.png'
 import BootstrapLayout from './BootstrapLayout'
 
 export default function AboutPicture(props) {
@@ -10,7 +11,7 @@ export default function AboutPicture(props) {
                 {...props} 
                 src={AboutPic} 
                 alt="About Picture" 
-                className='p-0 object-fit-fill rounded-0 rounded-lg-3'
+                className='p-0 object-fit-cover rounded-0 rounded-lg-3 transition-transform duration-300 ease-in-out hover:scale-105'
                 style={{ maxWidth: '400px', height: 'auto' }} 
             />
         </div>

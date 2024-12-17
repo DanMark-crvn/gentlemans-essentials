@@ -1,6 +1,7 @@
 import { Head } from '@inertiajs/react'
 import MasulineWash from '@/Components/MasulineWash';
 import React from 'react'
+import ContactPicture from '@/Components/ContactPicture';
 
 // Contact.jsx
 export default function Contact() {
@@ -19,9 +20,10 @@ export default function Contact() {
       <Head title="Contact" />
       <div className='' id='contact'> 
         {/* Home Content Here */} 
-        <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 mb-4 pt-10 pb-10">
-          <MasulineWash animated={false}  />
-          <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
+        <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 mb-4 py-10">
+          {/* <MasulineWash animated={false}  /> */}
+          <ContactPicture />
+          <div className="p-3 col-md-9 col-lg-5 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
             <h1 className='secondary-font'>Contact</h1>
             <p className='secondary-font'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
             <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>

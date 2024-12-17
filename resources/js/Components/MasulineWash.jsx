@@ -37,12 +37,12 @@ export default function MasulineWash({animated = true, loading = false, ...props
       ):(
         // Check for animated prop and render accordingly
         animated ? (
-          //With Animation
+          //Without Animation
           <div className='col-lg-4 justify-items-center' data-aos="fade-left" data-aos-duration="3000">
             <img {...props} src={MWFront} alt="Masculine-Wash-Front" className='animate__animated animate__pulse animate__infinite p-0' style={{ maxWidth: '230px', height: 'auto' }} />
           </div>
         ) : (
-          //Without animation
+          //With animation
           <div className='col-lg-4 justify-items-center' data-aos="zoom-in" data-aos-duration="1500">
             <img 
               {...props} 
