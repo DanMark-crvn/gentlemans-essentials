@@ -17,6 +17,8 @@ import GEBlack from '@/Components/GEBlack';
 import GEWhite from '@/Components/GEWhite';
 import GEHomeBlack from '../../imgs/GEBlack.png'
 import GEHomeWhite from '../../imgs/GEWhite.jpg'
+import HomePicture from '@/Components/HomePicture';
+import HomeWrapperImage from '@/Components/HomeWrapperImage';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here
@@ -32,7 +34,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* //? SECTION 1 */}
                     <div className='w-full d-flex justify-content-center lg:h-screen mb-4'>
                         <div className="max-w-2xl px-6 lg:max-w-7xl d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 pt-10 pb-10">
-                            <MasulineWash animated={false}  />
+                            {/* <MasulineWash animated={false}  /> */}
+                            <HomePicture />
                             <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
                                 <h1 className='secondary-font'>Gentlemans Essential Masculine Wash</h1>
                                 <p className='secondary-font'>a gentle cleanser used for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of the area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
@@ -43,8 +46,24 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* SECTION 1 END */}
 
                     {/* //? SECTION 2 */}
-                    <div className='w-full d-flex justify-content-center align-items-center bg-[#b1afb7] h-screen'>                        {/* <GEWet /> */}
-                        <GEWet />
+                    <div className='w-full d-flex justify-content-center align-items-center'>
+                        {/* <GEWet /> */}
+                        <HomeWrapperImage homeImageWrapper={false} />
+                        <div className='max-w-2xl px-6 lg:max-w-full position-absolute d-flex justify-content-end align-items-center text-center pt-20 pb-20 text-white'> 
+                            {/* <MasculineWashGold />
+                            <MasculineWashFrontAndBack />
+                            <GEHome /> */}
+                            <div className="lg:px-20 col-lg-5 d-flex flex-column text-center text-lg-end" data-aos="fade-up" data-aos-duration="1500">
+                                <p className='secondary-font fs-4 fs-lg-3 p-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* SECTION 2 END */}
+
+                    {/* //? SECTION 2.1 */}
+                    <div className='w-full d-flex justify-content-center align-items-center'>
+                        {/* <GEWet /> */}
+                        <HomeWrapperImage homeImageWrapper={true} />
                         <div className='max-w-2xl px-6 lg:max-w-full position-absolute d-flex justify-content-end align-items-center text-center pt-20 pb-20 text-white'> 
                             {/* <MasculineWashGold />
                             <MasculineWashFrontAndBack />
@@ -54,7 +73,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </div>
                         </div>
                     </div>
-                    {/* SECTION 2 END */}
+                    {/* SECTION 2.1 END */}
 
                     {/* //? SECTION 3 */}
                     <div className='sectionThree w-full d-flex justify-content-evenly h-screen backdrop-blur-sm'>
@@ -86,7 +105,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* SECTION 3 END */}
 
                     {/* //? SECTION 4 */}
-                    <div className='max-w-2xl px-6 lg:max-w-7xl d-flex flex-column justify-content-center align-items-center text-center pt-64 pb-64 mt-4 px-md-5'> 
+                    {/* <div className='max-w-2xl px-6 lg:max-w-7xl d-flex flex-column justify-content-center align-items-center text-center pt-64 pb-64 mt-4 px-md-5'> 
                         <h3 className='primary-font px-0 px-md-5'>Subscribe to Newsletter!</h3>
                         <p className='secondary-font px-0 px-md-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
                         <div className='w-3-5 d-flex justify-content-center align-items-center'>
@@ -108,7 +127,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 </Button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* SECTION 4 END */}
                 </div>
             )}
