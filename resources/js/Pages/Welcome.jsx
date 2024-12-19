@@ -49,12 +49,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     <div className='w-full d-flex justify-content-center align-items-center'>
                         {/* <GEWet /> */}
                         <HomeWrapperImage homeImageWrapper={false} />
-                        <div className='max-w-2xl px-6 lg:max-w-full position-absolute d-flex justify-content-end align-items-center text-center pt-20 pb-20 text-white'> 
+                        <div className='w-full position-absolute d-flex justify-content-center justify-content-lg-end align-items-center text-center text-white'> 
                             {/* <MasculineWashGold />
                             <MasculineWashFrontAndBack />
                             <GEHome /> */}
-                            <div className="lg:px-20 col-lg-5 d-flex flex-column text-center text-lg-end" data-aos="fade-up" data-aos-duration="1500">
-                                <p className='secondary-font fs-4 fs-lg-3 p-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                            <div className="col-lg-6 d-flex text-center justify-content-center" data-aos="fade-up" data-aos-duration="1500">
+                                <p className='secondary-font fs-2 p-10'>Confidence Where It Counts</p>
                             </div>
                         </div>
                     </div>
@@ -64,12 +64,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     <div className='w-full d-flex justify-content-center align-items-center'>
                         {/* <GEWet /> */}
                         <HomeWrapperImage homeImageWrapper={true} />
-                        <div className='max-w-2xl px-6 lg:max-w-full position-absolute d-flex justify-content-end align-items-center text-center pt-20 pb-20 text-white'> 
+                        <div className='w-full position-absolute d-flex justify-content-center justify-content-lg-end align-items-center text-center text-white'> 
                             {/* <MasculineWashGold />
                             <MasculineWashFrontAndBack />
                             <GEHome /> */}
-                            <div className="lg:px-20 col-lg-5 d-flex flex-column text-center text-lg-end" data-aos="fade-up" data-aos-duration="1500">
-                                <p className='secondary-font fs-3 p-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                            <div className="col-lg-6 d-flex text-center justify-content-center" data-aos="fade-up" data-aos-duration="1500">
+                                <p className='secondary-font fs-2 p-10'>Strength You Can Feel</p>
                             </div>
                         </div>
                     </div>
