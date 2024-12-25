@@ -1,13 +1,12 @@
 // import HomePicWrapper from '../../imgs/About.jpg'
 import HomePicWrapper from '../../imgs/Original/GEArt 2.png'
 import HomePicWrapperTwo from '../../imgs/Original/Artboard 3 copy.png'
-import BootstrapLayout from './BootstrapLayout'
 
 export default function HomeWrapperImage({homeImageWrapper, ...props}) {
   return (
     // <div>AboutPicture</div>
-    <BootstrapLayout>
-        <div
+    <>
+        {/* <div
             style={{
             // backgroundImage: `url(${HomePicWrapper})`,
             backgroundSize: '',
@@ -23,7 +22,21 @@ export default function HomeWrapperImage({homeImageWrapper, ...props}) {
                 alt="Home-Wrapper Picture" 
                 className='p-0 object-fit-cover'
             />
+        </div> */}
+        <div
+          className="w-full h-full bg-center flex flex-col justify-center items-center"
+          style={{
+              backgroundImage: `url(${HomePicWrapper})`,
+              backgroundSize: 'cover',
+          }}
+        >
+          <img 
+            {...props} 
+            src={homeImageWrapper ? HomePicWrapperTwo : HomePicWrapper} 
+            alt="Home-Wrapper Picture" 
+            className="p-0 object-cover"
+          />
         </div>
-    </BootstrapLayout>
+    </>
   )
 }

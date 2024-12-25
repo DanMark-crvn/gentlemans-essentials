@@ -8,8 +8,8 @@ export default function GEHome(props) {
   return (
     // <div>GEHome</div>
     <>
-      <div className='d-flex flex-column container justify-content-center align-items-center p-10'>
-        <div className='d-flex justify-content-center' data-aos="zoom-in-up" data-aos-duration="3000">
+      <div className='flex flex-col container justify-center items-center p-10'>
+        <div className='flex justify-center' data-aos="zoom-in-up" data-aos-duration="3000">
           <video 
             {...props} 
             src={ProductVideo} 
@@ -17,16 +17,16 @@ export default function GEHome(props) {
             alt="Masculine-Wash-Product" 
             controls
             loop
-            className='img-fluid prod-img rounded-lg' 
+            className='prod-img rounded-lg' 
           />
         </div>
         <div className='p-2'>
           {/* <h2 className='primary-font'>Confidence Below the Belt</h2> */}
           <figure class="text-center">
             <blockquote class="blockquote">
-              <p className='primary-font fs-4'>Gentleman’s Essentials Masculine Wash</p>
+              <p className='primary-font text-2xl'>Gentleman’s Essentials Masculine Wash</p>
             </blockquote>
-            <figcaption class="blockquote-footer fs-5">
+            <figcaption class="blockquote-footer !text-xl">
               Confidence Below the Belt
             </figcaption>
           </figure>

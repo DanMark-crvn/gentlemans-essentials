@@ -98,9 +98,9 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
   return (
     
     <>
-        <header className="container position-relative z-3" data-aos="fade-down">
-            <div className="row align-items-center g-2">
-                <div className='header-container-nav flex justify-content-around align-items-center'>
+        <header className="container relative z-3" data-aos="fade-down">
+            <div className="items-center gap-2">
+                <div className='header-container-nav flex justify-around items-center'>
                     <div className="py-1">
                         {/* <!-- LOGO --> */}
                         <Link href="/">
@@ -114,11 +114,11 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
                         </div>
                     ) : null}
 
-                    <nav className={`navbar ${isMobile ? 'mobile position-absolute' : ''} ${navVisible ? 'active' : ''} ${isMobile && !navVisible ? 'd-none' : 'd-flex'}`} id="navbar">
+                    <nav className={`navbar ${isMobile ? 'mobile position-absolute' : ''} ${navVisible ? 'active' : ''} ${isMobile && !navVisible ? 'hidden' : 'flex'}`} id="navbar">
                         {auth.user ? (
                             <Link
                                 href={route('dashboard')}
-                                className="btn btn-outline-black rounded px-3 py-2"
+                                className="border-2 border-black text-black rounded px-3 py-2"
                             >
                                 Dashboards
                             </Link>

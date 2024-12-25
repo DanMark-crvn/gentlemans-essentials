@@ -28,15 +28,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
         <GuestLayout setActivePage={setActivePage}>
             <Head title="Welcome" />
             {activePage === 'Home' && (
-                <div className='home w-full d-flex flex-column justify-content-center align-items-center'> 
+                <div className='home w-full flex flex-col items-center justify-center'> 
                     {/* //TODO: Home Content Here */} 
 
                     {/* //? SECTION 1 */}
-                    <div className='w-full d-flex justify-content-center lg:h-screen mb-4'>
-                        <div className="max-w-2xl px-6 lg:max-w-7xl d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 pt-10 pb-10">
+                    <div className='w-full flex justify-center lg:h-screen mb-4'>
+                        <div className="max-w-2xl px-6 lg:max-w-7xl flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-8 py-10">
                             {/* <MasulineWash animated={false}  /> */}
                             <HomePicture />
-                            <div className="p-3 col-lg-6 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
+                            <div className="p-3 w-full lg:w-1/2 flex flex-col text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
                                 <h1 className='secondary-font'>Gentlemans Essential Masculine Wash</h1>
                                 <p className='secondary-font'>a gentle cleanser used for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of the area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
                                 {/* <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p> */}
@@ -46,38 +46,38 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* SECTION 1 END */}
 
                     {/* //? SECTION 2 */}
-                    <div className='w-full d-flex justify-content-center align-items-center'>
+                    <div className='w-full flex justify-center items-center'>
                         {/* <GEWet /> */}
                         <HomeWrapperImage homeImageWrapper={false} />
-                        <div className='w-full position-absolute d-flex justify-content-center justify-content-lg-end align-items-center text-center text-white'> 
+                        <div className='w-full absolute flex justify-center lg:justify-end items-center text-center text-white'> 
                             {/* <MasculineWashGold />
                             <MasculineWashFrontAndBack />
                             <GEHome /> */}
-                            <div className="col-lg-6 d-flex text-center justify-content-center" data-aos="fade-up" data-aos-duration="1500">
-                                <p className='secondary-font fs-2 p-10'>Confidence Where It Counts</p>
+                            <div className="lg:w-1/2 flex text-center justify-center" data-aos="fade-up" data-aos-duration="1500">
+                                <p className='secondary-font text-2xl lg:text-3xl p-10'>Confidence Where It Counts</p>
                             </div>
                         </div>
                     </div>
                     {/* SECTION 2 END */}
 
                     {/* //? SECTION 2.1 */}
-                    <div className='w-full d-flex justify-content-center align-items-center'>
+                    <div className='w-full flex justify-center items-center'>
                         {/* <GEWet /> */}
                         <HomeWrapperImage homeImageWrapper={true} />
-                        <div className='w-full position-absolute d-flex justify-content-center justify-content-lg-end align-items-center text-center text-white'> 
+                        <div className='w-full absolute flex justify-center lg:justify-end items-center text-center text-white'> 
                             {/* <MasculineWashGold />
                             <MasculineWashFrontAndBack />
                             <GEHome /> */}
-                            <div className="col-lg-6 d-flex text-center justify-content-center" data-aos="fade-up" data-aos-duration="1500">
-                                <p className='secondary-font fs-2 p-10'>Strength You Can Feel</p>
+                            <div className="lg:w-1/2 flex text-center justify-center" data-aos="fade-up" data-aos-duration="1500">
+                                <p className='secondary-font text-2xl lg:text-3xl p-10'>Strength You Can Feel</p>
                             </div>
                         </div>
                     </div>
                     {/* SECTION 2.1 END */}
 
                     {/* //? SECTION 3 */}
-                    <div className='sectionThree w-full d-flex justify-content-evenly h-screen backdrop-blur-sm'>
-                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center relative'  data-aos="fade-right">
+                    <div className='sectionThree w-full flex justify-evenly h-screen backdrop-blur-sm'>
+                        <div className='w-full flex flex-col justify-center items-center text-center relative'  data-aos="fade-right">
                             {/* Pseudo-element for blurred background */}
                             <div 
                                 className='absolute inset-0 bg-cover bg-center' 
@@ -89,7 +89,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             ></div> 
                             <GEWhite />
                         </div>
-                        <div className='w-full d-flex flex-column justify-content-center align-items-center text-center relative'  data-aos="fade-left"> 
+                        <div className='w-full flex flex-col justify-center items-center text-center relative'  data-aos="fade-left"> 
                             {/* Pseudo-element for blurred background */}
                             <div 
                                 className='absolute inset-0 bg-cover bg-center' 
@@ -105,10 +105,10 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* SECTION 3 END */}
 
                     {/* //? SECTION 4 */}
-                    {/* <div className='max-w-2xl px-6 lg:max-w-7xl d-flex flex-column justify-content-center align-items-center text-center pt-64 pb-64 mt-4 px-md-5'> 
-                        <h3 className='primary-font px-0 px-md-5'>Subscribe to Newsletter!</h3>
-                        <p className='secondary-font px-0 px-md-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
-                        <div className='w-3-5 d-flex justify-content-center align-items-center'>
+                    {/* <div className='max-w-2xl px-6 lg:max-w-7xl flex flex-col justify-center items-center text-center pt-16 pb-16 mt-4 md:px-20 border border-danger'> 
+                        <h3 className='primary-font px-0 md:px-20'>Subscribe to Newsletter!</h3>
+                        <p className='secondary-font px-0 md:px-20'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+                        <div className='w-3/5 flex justify-center items-center'>
                             <div className="input-group py-4">
                                 <span className="input-group-text" id="basic-addon2">@</span>
                                 <Input 
@@ -132,7 +132,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             )}
             {activePage === 'Product' && (
-                <div className='d-flex flex-column justify-content-center align-items-center gap-3'> 
+                <div className='flex flex-col justify-center items-center gap-3'> 
                     {/* Product Content Here */} 
                     <Product setActivePage={setActivePage} />
                 </div>
@@ -144,7 +144,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             )}
             {activePage === 'Services' && (
-                <div className='lg:h-screen d-flex justify-content-center align-items-center'> 
+                <div className='lg:h-screen flex justify-center items-center'> 
                     {/* Services Content Here */} 
                     <Services />
                 </div>

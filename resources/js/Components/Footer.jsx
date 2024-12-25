@@ -11,33 +11,33 @@ export default function Footer({onNavClick, currentPage}) {
     return (
         <div className="">
             <div className="container">
-                <div className="row text-center text-md-left footerLinks">
-                    <div className="col-md-4 mb-4 mb-md-0 footerLinksDivOne">
+                <div className="flex text-center md:text-left mt-2 footerLinks">
+                    <div className="w-full md:w-1/3 mb-4 md:mb-0 footerLinksDivOne">
                         <ApplicationLogo footer={false} />
                         <p className='mt-2'>
                             Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. 
                             Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant.
                         </p>
-                        <div className="d-flex gap-3 justify-content-center">
-                            <a href="https://www.facebook.com/thegentlemansessentials.ph/" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
+                        <div className="flex gap-3 justify-center">
+                            <a href="https://www.facebook.com/thegentlemansessentials.ph/" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-facebook"></i>
                             </a>
-                            {/* <a href="#" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
+                            {/* <a href="#" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-twitter"></i>
                             </a> */}
-                            <a href="https://www.instagram.com/thegentlemansessentials.ph/" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
+                            <a href="https://www.instagram.com/thegentlemansessentials.ph/" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-instagram"></i>
                             </a>
-                            {/* <a href="#" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
+                            {/* <a href="#" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-linkedin"></i>
                             </a> */}
-                            <a href="https://www.tiktok.com/@gentlemansessentialsph" className="me-2 fs-2 transition-transform duration-300 transform hover:scale-125">
+                            <a href="https://www.tiktok.com/@gentlemansessentialsph" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-tiktok"></i>
                             </a>
                         </div>
                     </div>
-                    <div className='col-md-8 d-flex justify-content-around footerLinksDivTwo'>
-                        <div className="col-md-2 mb-4 mb-md-0 py-md-5 py-0">
+                    <div className='md:w-2/3 flex justify-around footerLinksDivTwo py-5'>
+                        <div className="md:w-1/6 py-0 md:py-5">
                             <h5>About</h5>
                             <ul className="list-unstyled">
                                 <li><a href="#" onClick={() => handleNavClick("About Us")}>About Us</a></li>
@@ -46,7 +46,7 @@ export default function Footer({onNavClick, currentPage}) {
                                 <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Contact Us</a></li>
                             </ul>
                         </div>
-                        <div className="col-md-2 mb-4 mb-md-0 py-md-5 py-0">
+                        <div className="md:w-1/6 py-0 md:py-5">
                             <h5>Support</h5>
                             <ul className="list-unstyled">
                                 <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Support</a></li>
@@ -54,7 +54,7 @@ export default function Footer({onNavClick, currentPage}) {
                                 <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Lorem</a></li>
                             </ul>
                         </div>
-                        <div className="col-md-2 mb-4 mb-md-0 py-md-5 py-0">
+                        <div className="md:w-1/6 py-0 md:py-5">
                             <h5>Jobs</h5>
                             <ul className="list-unstyled">
                                 <li><a href="#">Jobs</a></li>
@@ -63,7 +63,7 @@ export default function Footer({onNavClick, currentPage}) {
                                 <li><a href="#">Privacy Policy</a></li>
                             </ul>
                         </div>
-                        <div className="col-md-2 mb-4 mb-md-0 py-md-5 py-0">
+                        <div className="md:w-1/6 py-0 md:py-5">
                             <h5>Product</h5>
                             <ul className="list-unstyled">
                                 <li><a href="#" onClick={() => handleNavClick("Product")}>GentleMan's</a></li>
@@ -74,7 +74,7 @@ export default function Footer({onNavClick, currentPage}) {
                     </div>
                 </div>
                 <hr className="my-4" />
-                <div className="d-flex flex-column flex-md-row justify-content-between px-2 text-center">
+                <div className="flex flex-col md:flex-row justify-between px-2 text-center">
                     <div className="">
                         <p className="mb-0">Copyright © 2024, Gentleman's Essentials. All Rights Reserved.</p>
                     </div>

@@ -18,10 +18,12 @@ export default function GuestLayout({ children, setActivePage }) {
         <BootstrapLayout>
             <div className="bg-color overflow-hidden">
                 <div className="relative flex min-h-screen flex-col items-center justify-center selection:bg-[#FFC300] selection:text-white">
+                    {/* HEADER */}
                     <div className="relative w-full header">
                         {/* <Header onNavClick={(page) => setActivePage(page)} currentPage="home" /> */}
                         <Header onNavClick={handleNavClick} currentPage={selectedPage} />
                     </div>
+                    
                     
                     {/* <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl mt-4 border border-danger">
                         <main className="mt-6 w-full">
