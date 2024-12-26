@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+// import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 export default function BootstrapLayout({ children }) {
     // useEffect(() => {
     //     const script = document.createElement('script');

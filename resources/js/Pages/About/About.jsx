@@ -11,13 +11,13 @@ export default function About() {
       <Head title="About" />
       <div className='pb-20'> 
         {/* Home Content Here */} 
-        <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 mb-4 py-10">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-8 mb-4 py-10">
           {/* <MasulineWash animated={false}  /> */}
           <div className=''>
             <AboutPicture />
           </div>
-          <div className="p-3 px-5 col-lg-4 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
-            <h1 className='secondary-font'>Why Choose Us</h1>
+          <div className="p-3 px-5 lg:w-1/3 flex flex-col md:text-center lg:text-start" data-aos="fade-up" data-aos-duration="1500">
+            <h1 className='secondary-font text-4xl pb-2 font-medium'>Why Choose Us</h1>
             <p className='secondary-font'>At Gentleman's Essential, we understand that personal care is not just about cleanliness—it's about confidence, comfort, and feeling your best, every day. Here's why our masculine wash stands out:</p>
             <ul className="pt-3 list-unstyled">
               <li className='secondary-font'>
@@ -38,8 +38,8 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className='d-flex flex-column pt-4 mt-40'>
-          <h1 className='primary-font text-center' data-aos="fade-up" data-aos-duration="2500">Meet Our Team</h1>
+        <div className='flex flex-col pt-4 mt-40'>
+          <h1 className='primary-font text-5xl text-center font-medium' data-aos="fade-up" data-aos-duration="2500">Meet Our Team</h1>
           <MeetOurTeam />
         </div>
       </div>

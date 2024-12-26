@@ -98,7 +98,7 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
   return (
     
     <>
-        <header className="container relative z-3" data-aos="fade-down">
+        <header className="w-full relative z-10" data-aos="fade-down">
             <div className="items-center gap-2">
                 <div className='header-container-nav flex justify-around items-center'>
                     <div className="py-1">
@@ -114,7 +114,7 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
                         </div>
                     ) : null}
 
-                    <nav className={`navbar ${isMobile ? 'mobile position-absolute' : ''} ${navVisible ? 'active' : ''} ${isMobile && !navVisible ? 'hidden' : 'flex'}`} id="navbar">
+                    <nav className={`navbar ${isMobile ? 'mobile absolute' : ''} ${navVisible ? 'active' : ''} ${isMobile && !navVisible ? 'hidden' : 'flex'}`} id="navbar">
                         {auth.user ? (
                             <Link
                                 href={route('dashboard')}
@@ -133,7 +133,7 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
                                         onNavClick(item.name); // Update the activePage state
                                         handleNavClick(item.name);
                                     }}
-                                    className={`navbarLinks text-white px-3 py-2 me-2 ${isMobile ? 'text-white' : ''} ${selectedPage === item.name ? 'active' : ''}`}
+                                    className={`navbarLinks !text-gray-50 px-3 py-2 me-2 ${isMobile ? '!text-gray-50 text-center' : ''} ${selectedPage === item.name ? 'active' : ''}`}
                                 >
                                     {item.name}
                                 </Link>

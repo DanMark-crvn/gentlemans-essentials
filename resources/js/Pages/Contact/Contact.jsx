@@ -20,35 +20,35 @@ export default function Contact() {
       <Head title="Contact" />
       <div className='' id='contact'> 
         {/* Home Content Here */} 
-        <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-6 lg:gap-8 mb-4 py-10">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-8 mb-4 py-10">
           {/* <MasulineWash animated={false}  /> */}
           <ContactPicture />
-          <div className="p-3 col-md-9 col-lg-5 d-flex flex-column text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
-            <h1 className='secondary-font'>Contact</h1>
-            <p className='secondary-font'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
-            <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>
+          <div className="p-3 md:w-9/12 lg:w-5/12 flex flex-col text-left" data-aos="fade-up" data-aos-duration="1500">
+            <h1 className='secondary-font text-4xl font-medium pb-3 px-3'>Contact</h1>
+            <p className='secondary-font px-3'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+            <p className='secondary-font px-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>
             <div className='mb-3'>
-              <div className="d-flex align-items-center p-2">
-                <i className="bi bi-geo-alt contactIcon d-flex align-items-center fs-5 p-3"></i>
+              <div className="flex items-center p-2">
+                <i className="bi bi-geo-alt contactIcon flex items-center text-2xl p-3"></i>
                 <div className="ms-3">
                   <p className="mb-0 fs-6">E1 Scandia Suites, Silang, Cavite</p>
                 </div>
               </div>
-              <div className="d-flex align-items-center p-2">
-                <i className="bi bi-envelope contactIcon d-flex align-items-center fs-5 p-3"></i>
+              <div className="flex items-center p-2">
+                <i className="bi bi-envelope contactIcon flex items-center text-2xl p-3"></i>
                 <div className="ms-3">
                   <p className="mb-0 fs-6">gentlemansessentialsofficial@gmail.com</p>
                 </div>
               </div>
-              <div className="d-flex align-items-center p-2">
-                <i className="bi bi-telephone contactIcon d-flex align-items-center fs-5 p-3"></i>
+              <div className="flex items-center p-2">
+                <i className="bi bi-telephone contactIcon flex items-center text-2xl p-3"></i>
                 <div className="ms-3">
                   <p className="mb-0 fs-6">+639 54 386 4923</p>
                 </div>
               </div>
             </div>
 
-            <form className='needs-validation' novalidate onSubmit={handleSubmit}>
+            {/* <form className='needs-validation' novalidate onSubmit={handleSubmit}>
               <div className="form-floating mb-3">
                 <input type="text" className="form-control" id="validationCustom01" placeholder="Full Name" required/>
                 <label htmlFor="validationCustom01">Full Name</label>
@@ -75,6 +75,61 @@ export default function Contact() {
               </div>
               <div>
                 <button className="btn btn-warning" type="submit">Submit</button>
+              </div>
+            </form> */}
+            <form class="w-full mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" noValidate onSubmit={handleSubmit}>
+              <div class="relative">
+                <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Enter your full name"
+                  required
+                  class="peer w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#f5bf03] focus:border-[#f5bf03]"
+                />
+                <div class="text-sm text-red-500 peer-invalid:block hidden">
+                  Please enter your full name.
+                </div>
+              </div>
+
+              <div class="relative">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+                  class="peer w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#f5bf03] focus:border-[#f5bf03]"
+                />
+                <div class="text-sm text-red-500 peer-invalid:block hidden">
+                  Please enter a valid email address.
+                </div>
+              </div>
+
+              <div class="relative">
+                <label for="comment" class="block text-sm font-medium text-gray-700">Comment/Inquiry</label>
+                <textarea
+                  id="comment"
+                  name="comment"
+                  placeholder="Write your comment or inquiry"
+                  required
+                  class="peer w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#f5bf03] focus:border-[#f5bf03]"
+                  rows="5"
+                ></textarea>
+                <div class="text-sm text-red-500 peer-invalid:block hidden">
+                  Please enter a comment or inquiry.
+                </div>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  class="w-full py-3 bg-[#f5bf03] text-white rounded-md hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+                >
+                  Submit
+                </button>
               </div>
             </form>
           </div>

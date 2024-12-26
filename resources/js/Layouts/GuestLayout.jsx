@@ -15,7 +15,7 @@ export default function GuestLayout({ children, setActivePage }) {
     };
 
     return (
-        <BootstrapLayout>
+        <>
             <div className="bg-color overflow-hidden">
                 <div className="relative flex min-h-screen flex-col items-center justify-center selection:bg-[#FFC300] selection:text-white">
                     {/* HEADER */}
@@ -41,6 +41,6 @@ export default function GuestLayout({ children, setActivePage }) {
                 {/* Gentle Essentials{laravelVersion} (PHP v{phpVersion}) */}
                 <Footer onNavClick={handleNavClick} currentPage={selectedPage} />
             </footer>
-        </BootstrapLayout>
+        </>
     );
 }

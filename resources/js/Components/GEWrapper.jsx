@@ -54,12 +54,12 @@ export default function GEWrapper({props, selectedPage, pageContent}) {
           {/* <img {...props} src={WrapperGE} alt="GE-Wrapper" /> */}
           {/* Add the text here */}
           <div
-            className='text-center position-absolute'
+            className='text-center absolute'
           >
             <div key={selectedPage} className={`flex justify-center md:justify-center ${textContainerjustifyContentClass}`} data-aos="fade-right">
               <div className={`text-heading w-full md:w-8/12 lg:w-8/12 flex flex-col ${textPositionClass}`}>
                 {/* <h3 className='primary-font fw-light'>{pageContent[selectedPage].title}</h3> */}
-                <h1 className='secondary-font'>{pageContent[selectedPage].subtitle}</h1>
+                <h1 className='secondary-font text-4xl font-medium pb-2'>{pageContent[selectedPage].subtitle}</h1>
                 <p className='secondary-font italic text-white'>{pageContent[selectedPage].description}</p>
               </div>
             </div>

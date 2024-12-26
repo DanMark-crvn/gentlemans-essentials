@@ -36,9 +36,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         <div className="max-w-2xl px-6 lg:max-w-7xl flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-8 py-10">
                             {/* <MasulineWash animated={false}  /> */}
                             <HomePicture />
-                            <div className="p-3 w-full lg:w-1/2 flex flex-col text-center text-lg-start" data-aos="fade-up" data-aos-duration="1500">
-                                <h1 className='secondary-font'>Gentlemans Essential Masculine Wash</h1>
-                                <p className='secondary-font'>a gentle cleanser used for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of the area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
+                            <div className="p-3 w-full lg:w-1/2 flex flex-col text-center lg:text-start" data-aos="fade-up" data-aos-duration="1500">
+                                <h1 className='secondary-font text-4xl font-medium'>Gentlemans Essential Masculine Wash</h1>
+                                <p className='secondary-font py-4'>a gentle cleanser used for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of the area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
                                 {/* <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p> */}
                             </div>
                         </div>
