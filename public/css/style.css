@@ -113,7 +113,7 @@
 .navbar.mobile{
     /* position: absolute; */
     top: 80px; /* Adjust this to control the distance below the Switch 120 */
-    right: 25px !important; /*45*/
+    /* right: 45px !important; 45 */
     background-color: var(--rich-black);
     border-radius: 5px;
     width: 150px;
@@ -139,48 +139,6 @@
     animation-duration: 4s !important; /* Adjust to your desired duration */
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust based on your header height */
-        right: 0;
-        background: white;
-        width: 100%;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar.show {
-        display: flex;
-    }
-
-    .navbar-toggle {
-        display: block;
-    }
-}
-
-@media (max-width: 958px){
-    .navbar {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust based on your header height */
-        right: 0;
-        background: white;
-        width: 100%;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar.show {
-        display: flex;
-        border: 1px solid red;
-    }
-
-    .navbar-toggle {
-        display: block;
-    }
-}
 /* NAVBAR END */
 
 /* HOME */

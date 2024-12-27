@@ -18,20 +18,20 @@ export default function Footer({onNavClick, currentPage}) {
                             Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. 
                             Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant.
                         </p>
-                        <div className="flex gap-3 justify-center p-2">
-                            <a href="https://www.facebook.com/thegentlemansessentials.ph/" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
+                        <div className="flex gap-3 justify-center p-2 cursor-pointer">
+                            <a href="https://www.facebook.com/thegentlemansessentials.ph/" target="_blank" rel="noopener noreferrer" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-facebook"></i>
                             </a>
                             {/* <a href="#" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-twitter"></i>
                             </a> */}
-                            <a href="https://www.instagram.com/thegentlemansessentials.ph/" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
+                            <a href="https://www.instagram.com/thegentlemansessentials.ph/" target="_blank" rel="noopener noreferrer" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-instagram"></i>
                             </a>
                             {/* <a href="#" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-linkedin"></i>
                             </a> */}
-                            <a href="https://www.tiktok.com/@gentlemansessentialsph" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
+                            <a href="https://www.tiktok.com/@gentlemansessentialsph" target="_blank" rel="noopener noreferrer" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-tiktok"></i>
                             </a>
                         </div>

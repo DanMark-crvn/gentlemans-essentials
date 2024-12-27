@@ -95,6 +95,14 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
         }
     };
 
+    const handleLinkClick = (itemName) => {
+        // Handle navigation logic here (e.g., setting active page)
+        onNavClick(itemName); // Assuming this is your existing function to update the active page
+        if (isMobile) {
+            setNavVisible(false); // Close the navbar on mobile when a link is clicked
+        }
+    };
+
   return (
     
     <>
@@ -114,11 +122,19 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
                         </div>
                     ) : null}
 
-                    <nav className={`navbar ${isMobile ? 'mobile absolute' : ''} ${navVisible ? 'active' : ''} ${isMobile && !navVisible ? 'hidden' : 'flex'}`} id="navbar">
+                    <nav 
+                        className={`navbar 
+                            ${isMobile ? 'mobile flex flex-col absolute right-1 md:right-16' : ''} 
+                            ${navVisible ? 'active' : ''} 
+                            ${isMobile && !navVisible ? 'hidden opacity-0 transition-opacity duration-300' : 'flex opacity-100 transition-opacity duration-300'} 
+                            ${isMobile ? 'transition-transform transform ease-in-out duration-300' : ''}`
+                        } id="navbar"
+                    >
                         {auth.user ? (
                             <Link
                                 href={route('dashboard')}
                                 className="border-2 border-black text-black rounded px-3 py-2"
+                                onClick={() => handleLinkClick('Dashboard')} // Close navbar when clicked
                             >
                                 Dashboards
                             </Link>
@@ -132,6 +148,7 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
                                         e.preventDefault(); // Prevent default link behavior
                                         onNavClick(item.name); // Update the activePage state
                                         handleNavClick(item.name);
+                                        handleLinkClick(item.name); // Close navbar on mobile and update active page
                                     }}
                                     className={`navbarLinks !text-gray-50 px-3 py-2 me-2 ${isMobile ? '!text-gray-50 text-center' : ''} ${selectedPage === item.name ? 'active' : ''}`}
                                 >
