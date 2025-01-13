@@ -42,7 +42,7 @@ export default function Footer({onNavClick, currentPage}) {
                             <ul className="list-unstyled">
                                 <li><a href="#" onClick={() => handleNavClick("About Us")}>About Us</a></li>
                                 <li><a href="#" onClick={() => handleNavClick("Product")}>Product</a></li>
-                                <li><a href="#" onClick={() => handleNavClick("Services")}>Services</a></li>
+                                <li><a href="#" onClick={() => handleNavClick("Reseller")}>Reseller</a></li>
                                 <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Contact Us</a></li>
                             </ul>
                         </div>

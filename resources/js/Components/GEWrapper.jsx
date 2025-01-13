@@ -6,17 +6,17 @@ export default function GEWrapper({props, selectedPage, pageContent}) {
 
   // Determine dynamic class for alignment based on the selected page
   const justifyContentClass =
-  selectedPage === 'Product' || selectedPage === 'About Us' || selectedPage === 'Services'
+  selectedPage === 'Product' || selectedPage === 'About Us' || selectedPage === 'Reseller'
     ? 'md:justify-end lg:justify-end'
     : 'md:justify-start lg:justify-start';
 
   const textContainerjustifyContentClass =
-  selectedPage === 'Product' || selectedPage === 'About Us' || selectedPage === 'Services'
+  selectedPage === 'Product' || selectedPage === 'About Us' || selectedPage === 'Reseller'
     ? 'lg:justify-center'
     : 'lg:justify-end';
   
   const textPositionClass =
-  selectedPage === 'Product' || selectedPage === 'About Us' || selectedPage === 'Services'
+  selectedPage === 'Product' || selectedPage === 'About Us' || selectedPage === 'Reseller'
     ? 'md:text-end lg:text-end'
     : 'md:text-start lg:text-start';
 

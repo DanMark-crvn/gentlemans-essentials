@@ -29,6 +29,7 @@ export default function HomeWrapperImage({homeImageWrapper, ...props}) {
               backgroundImage: `url(${HomePicWrapper})`,
               backgroundSize: 'cover',
           }}
+          data-aos="fade-up"
         >
           <img 
             {...props} 

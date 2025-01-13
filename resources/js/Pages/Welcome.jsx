@@ -7,8 +7,8 @@ import { useState } from 'react';
 import Contact from './Contact/Contact';
 import GuestLayout from '@/Layouts/GuestLayout';
 import Product from './Product/Product';
+import Reseller from './Reseller/Reseller';
 import About from './About/About';
-import Services from './Services/Services';
 import GEHome from '@/Components/GEHome';
 import WrapperGE from '../../imgs/GEWrapper.png';
 import GEWet from '@/Components/GEWet';
@@ -143,10 +143,10 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     <About />
                 </div>
             )}
-            {activePage === 'Services' && (
+            {activePage === 'Reseller' && (
                 <div className='lg:h-screen flex justify-center items-center'> 
-                    {/* Services Content Here */} 
-                    <Services />
+                    {/* Reseller Content Here */} 
+                    <Reseller />
                 </div>
             )}
             {activePage === 'Contact Us' && (

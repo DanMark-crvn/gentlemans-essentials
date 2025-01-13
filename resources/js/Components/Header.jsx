@@ -45,7 +45,7 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
         { name: 'Home', href: '/' },
         { name: 'Product', href: '/product' },
         { name: 'About Us', href: '/about' },
-        { name: 'Services', href: '/services' },
+        { name: 'Reseller', href: '/reseller' },
         { name: 'Contact Us', href: '/contact' }
     ];    
 
@@ -81,8 +81,8 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
             description: "We are committed to delivering the best experience and value to our customers.",
             image: AboutImage
         },
-        "Services": {
-            title: "Our Services",
+        "Reseller": {
+            title: "Our Reseller",
             subtitle: "What We Offer",
             description: "We provide a range of exceptional services to support your lifestyle.",
             image: ServicesImage
