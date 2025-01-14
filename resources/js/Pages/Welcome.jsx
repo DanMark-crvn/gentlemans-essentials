@@ -15,8 +15,10 @@ import GEWet from '@/Components/GEWet';
 import WETGE from '../../imgs/WETGE.png';
 import GEBlack from '@/Components/GEBlack';
 import GEWhite from '@/Components/GEWhite';
-import GEHomeBlack from '../../imgs/GEBlack.png'
-import GEHomeWhite from '../../imgs/GEWhite.jpg'
+// import GEHomeBlack from '../../imgs/GEBlack.png'
+import GEHomeBlack from '../../imgs/GEBlackEdited.png'
+import GEHomeWhite from '../../imgs/GEWET.png'
+// import GEHomeWhite from '../../imgs/GEWhite.jpg'
 import HomePicture from '@/Components/HomePicture';
 import HomeWrapperImage from '@/Components/HomeWrapperImage';
 
@@ -76,9 +78,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* SECTION 2.1 END */}
 
                     {/* //? SECTION 3 */}
-                    <div className='sectionThree w-full flex justify-evenly h-screen backdrop-blur-sm'>
+                    {/* <div className='sectionThree w-full flex justify-evenly h-screen backdrop-blur-sm'>
                         <div className='w-full flex flex-col justify-center items-center text-center relative'  data-aos="fade-right">
-                            {/* Pseudo-element for blurred background */}
+                            Pseudo-element for blurred background
                             <div 
                                 className='absolute inset-0 bg-cover bg-center' 
                                 style={{ 
@@ -90,7 +92,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <GEWhite />
                         </div>
                         <div className='w-full flex flex-col justify-center items-center text-center relative'  data-aos="fade-left"> 
-                            {/* Pseudo-element for blurred background */}
+                            Pseudo-element for blurred background
                             <div 
                                 className='absolute inset-0 bg-cover bg-center' 
                                 style={{ 
@@ -100,6 +102,45 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 }}
                             ></div> 
                             <GEBlack />
+                        </div>
+                    </div> */}
+                    <div className="flex flex-col md:flex-row w-full h-screen">
+                        {/* Left Section */}
+                        <div className="flex-1 bg-gray-900 text-white flex flex-col justify-center items-center px-8 relative" data-aos="fade-right">
+                            <img
+                            src={GEHomeBlack}
+                            alt="Black GE"
+                            className="absolute inset-0 w-full h-full object-cover z-0"
+                            />
+                            <div className="relative z-10 text-center">
+                                <h1 className="text-3xl md:text-4xl font-bold mt-4">
+                                    CONFIDENCE BELOW THE BELT
+                                </h1>
+                                <p className="text-lg mt-2 text-yellow-500 font-bold">Fresh as new</p>
+                                {/* <button className="mt-6 bg-amber-500 text-black py-2 px-4 rounded">
+                                    Learn More
+                                </button> */}
+                            </div>
+                        </div>
+
+                        {/* Right Section */}
+                        <div className="flex-1 bg-purple-700 text-white flex flex-col justify-center items-center px-8 relative" data-aos="fade-left">
+                            <img
+                            src={GEHomeWhite}
+                            alt="WET GE"
+                            className="absolute inset-0 w-full h-full object-cover z-0"
+                            />
+                            <div className="relative z-10 text-center">
+                                <h1 className="text-3xl md:text-4xl font-bold mt-4">
+                                    Masculine Wash
+                                </h1>
+                                <p className="text-lg mt-2 text-yellow-500 font-bold">
+                                    CLEANSING AND INVIGORATING
+                                </p>
+                                {/* <button className="mt-6 bg-amber-500 text-black py-2 px-4 rounded">
+                                    Learn More
+                                </button> */}
+                            </div>
                         </div>
                     </div>
                     {/* SECTION 3 END */}

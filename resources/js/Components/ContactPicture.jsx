@@ -1,4 +1,4 @@
-import AboutPic from '../../imgs/Original/GEArt 9.png'
+import ContactPic from '../../imgs/About.jpg'
 
 export default function ContactPicture(props) {
   return (
@@ -7,7 +7,7 @@ export default function ContactPicture(props) {
         <div className='' data-aos="fade-up" data-aos-duration="1500">
             <img 
                 {...props} 
-                src={AboutPic} 
+                src={ContactPic} 
                 alt="Contact Picture" 
                 className='p-0 object-cover rounded-lg max-w-[550px] h-auto'
                 // style={{ maxWidth: '550px', height: 'auto' }} 
