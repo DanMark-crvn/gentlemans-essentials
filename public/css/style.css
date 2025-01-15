@@ -6,6 +6,63 @@
     text-decoration: none !important;
     scroll-behavior: smooth !important;
 }
+/* Vanguard Fonts */
+@font-face {
+    font-family: 'Vanguard';
+    src: url('../build/assets/fonts/Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vanguard';
+    src: url('../build/assets/fonts/Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vanguard';
+    src: url('../build/assets/fonts/Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Vanguard';
+    src: url('../build/assets/fonts/Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-bolditalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Museum Fonts */
+@font-face {
+    font-family: 'Museum';
+    src: url('../build//assets/fonts/museum/MuseumBible.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museum';
+    src: url('../build/assets/fonts/museum/MuseumFoundry.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museum';
+    src: url('../build/assets/fonts/museum/MuseumSixty.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museum';
+    src: url('../build/assets/fonts/museum/MuseumFourteen.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
 
 :root{
     --primary-color: #3490dc; /* Blue */
@@ -22,12 +79,26 @@
     --ge-logo-black: #0a0203; /* LOGO COLOR BLACK */
     --ge-logo-yellow: #f5bf03; /*LOGO COLOR YELLOW*/
 
-    --primary-logo-font: 'VANGUARD'; /*Font LOGO PRIMARY*/
-    --secondary-logo-font: 'MUSEUM '; /*Font LOGO Secondary Font */
+    --primary-logo-font: 'Vanguard'; /*Font LOGO PRIMARY*/
+    --secondary-logo-font: 'Museum '; /*Font LOGO Secondary Font */
 
-    --primary-font: 'Roboto', sans-serif; /* Main Font */
-    --secondary-font: 'Poppins', sans-serif; /* Sub Font */
+    --primary-font: 'Roboto', sans-serif; /*Main Font*/
+    --secondary-font: 'Poppins', sans-serif; /*Sub Font*/
 }
+.primary-font{
+    font-family: var(--primary-font);
+}
+.secondary-font{
+    font-family: var(--secondary-font);
+}
+
+.primary-logo-font{
+    font-family: var(--primary-logo-font);
+}
+.secondary-logo-font{
+    font-family: var(--secondary-logo-font);
+}
+
 .bg-color{
     /* background-color: var(--background-color); */
     background-color: var(--background-color);
