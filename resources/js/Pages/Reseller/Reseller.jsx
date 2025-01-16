@@ -14,8 +14,8 @@ export default function Reseller() {
           {/* <MasulineWash animated={false}  /> */}
           <ResellerPicture />
           <div className="p-3 px-20 lg:w-5/12 md:w-4/5 flex flex-col md:text-center lg:text-left" data-aos="fade-up" data-aos-duration="1500">
-            <h1 className='secondary-font text-4xl font-medium pb-2'>Reseller</h1>
-            <p className='secondary-font'>Experience the ultimate in personal care with Gentleman’s Essential Masculine Wash—designed specifically for men. This gentle cleanser is infused with aloe vera and antibacterial properties to keep you feeling fresh, moisturized, and confident all day long. Its carefully balanced formula controls odor and maintains the right pH, ensuring optimal comfort and hygiene. Make it a part of your daily routine for a refreshing, invigorating experience every time.</p>
+            <h1 className='primary-font text-5xl text-pretty text-justify font-semibold pb-2'>Reseller</h1>
+            <p className='secondary-font py-4 text-pretty text-lg text-justify tracking-wide'>Experience the ultimate in personal care with Gentleman’s Essential Masculine Wash—designed specifically for men. This gentle cleanser is infused with aloe vera and antibacterial properties to keep you feeling fresh, moisturized, and confident all day long. Its carefully balanced formula controls odor and maintains the right pH, ensuring optimal comfort and hygiene. Make it a part of your daily routine for a refreshing, invigorating experience every time.</p>
             {/* <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p> */}
           </div>
         </div>

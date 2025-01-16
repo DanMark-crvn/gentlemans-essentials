@@ -1,5 +1,3 @@
-import MasculineWashFrontAndBack from '@/Components/MasculineWashFrontAndBack';
-import MasculineWashGold from '@/Components/MasculineWashGold';
 import MasulineWash from '@/Components/MasulineWash';
 import { Button, Input } from '@headlessui/react';
 import { Head, Link } from '@inertiajs/react';
@@ -39,8 +37,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             {/* <MasulineWash animated={false}  /> */}
                             <HomePicture />
                             <div className="p-3 w-full lg:w-1/2 flex flex-col text-center lg:text-start" data-aos="fade-up" data-aos-duration="1500">
-                                <h1 className='secondary-font text-4xl font-medium'>Gentlemans Essential Masculine Wash</h1>
-                                <p className='secondary-font py-4'>a gentle cleanser used for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of the area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
+                                <h1 className='primary-font text-5xl font-semibold'>Gentlemans Essential Masculine Wash</h1>
+                                <p className='secondary-font py-4 text-pretty text-lg text-justify tracking-wide'>a gentle cleanser used for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of the area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
                                 {/* <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p> */}
                             </div>
                         </div>
@@ -56,7 +54,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <MasculineWashFrontAndBack />
                             <GEHome /> */}
                             <div className="lg:w-1/2 flex text-center justify-center" data-aos="fade-up" data-aos-duration="1500">
-                                <p className='secondary-font text-2xl lg:text-3xl p-10'>Confidence Where It Counts</p>
+                                <h3 className='primary-font text-4xl lg:text-7xl font-medium p-10'>Confidence Where It Counts</h3>
                             </div>
                         </div>
                     </div>
@@ -71,7 +69,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <MasculineWashFrontAndBack />
                             <GEHome /> */}
                             <div className="lg:w-1/2 flex text-center justify-center" data-aos="fade-up" data-aos-duration="1500">
-                                <p className='secondary-font text-2xl lg:text-3xl p-10'>Strength You Can Feel</p>
+                                <h3 className='primary-font text-4xl lg:text-7xl font-medium p-10'>Strength You Can Feel</h3>
                             </div>
                         </div>
                     </div>
@@ -113,10 +111,10 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             className="absolute inset-0 w-full h-full object-cover z-0"
                             />
                             <div className="relative z-10 text-center">
-                                <h1 className="text-3xl md:text-4xl font-bold mt-4">
+                                <h1 className="primary-font text-3xl md:text-5xl font-bold mt-4">
                                     CONFIDENCE BELOW THE BELT
                                 </h1>
-                                <p className="text-lg mt-2 text-yellow-500 font-bold">Fresh as new</p>
+                                <p className="secondary-font text-2xl mt-2 text-yellow-500 font-bold">Fresh as new</p>
                                 {/* <button className="mt-6 bg-amber-500 text-black py-2 px-4 rounded">
                                     Learn More
                                 </button> */}
@@ -131,10 +129,10 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             className="absolute inset-0 w-full h-full object-cover z-0"
                             />
                             <div className="relative z-10 text-center">
-                                <h1 className="text-3xl md:text-4xl font-bold mt-4">
+                                <h1 className="primary-font text-3xl md:text-5xl font-bold mt-4">
                                     Masculine Wash
                                 </h1>
-                                <p className="text-lg mt-2 text-yellow-500 font-bold">
+                                <p className="secondary-font text-2xl mt-2 text-yellow-500 font-bold">
                                     CLEANSING AND INVIGORATING
                                 </p>
                                 {/* <button className="mt-6 bg-amber-500 text-black py-2 px-4 rounded">

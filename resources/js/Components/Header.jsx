@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import AOS from 'aos';
-import BootstrapLayout from './BootstrapLayout'
 import ApplicationLogo from './ApplicationLogo'
 import MasulineWash from '@/Components/MasulineWash';
 import Switch from './Switch';
@@ -65,7 +64,7 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
     const pageContent = {
         "Home": {
             title: "GE",
-            subtitle: "Gentleman's Essential Masculine Wash",
+            subtitle: "Gentlemans Essential Masculine Wash",
             description: "Confidence Below The Belt",
             image: HomeImage
         },
@@ -123,8 +122,8 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
                     ) : null}
 
                     <nav 
-                        className={`navbar 
-                            ${isMobile ? 'mobile flex flex-col absolute right-1 md:right-16' : ''} 
+                        className={`navbar secondary-font text-pretty tracking-wide
+                            ${isMobile ? 'mobile flex !flex-col absolute right-1 md:right-16' : ''} 
                             ${navVisible ? 'active' : ''} 
                             ${isMobile && !navVisible ? 'hidden opacity-0 transition-opacity duration-300' : 'flex opacity-100 transition-opacity duration-300'} 
                             ${isMobile ? 'transition-transform transform ease-in-out duration-300' : ''}`

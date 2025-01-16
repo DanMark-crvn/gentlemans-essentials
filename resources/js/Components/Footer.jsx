@@ -14,7 +14,7 @@ export default function Footer({onNavClick, currentPage}) {
                 <div className="flex text-center md:text-left mt-2 footerLinks">
                     <div className="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col justify-center items-center footerLinksDivOne">
                         <ApplicationLogo footer={false} />
-                        <p className='mt-2 text-base text-center text-black p-2'>
+                        <p className='secondary-font mt-2 text-base text-pretty tracking-wide text-center text-black p-2'>
                             Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. 
                             Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant.
                         </p>
@@ -38,37 +38,37 @@ export default function Footer({onNavClick, currentPage}) {
                     </div>
                     <div className='md:w-2/3 flex justify-evenly footerLinksDivTwo py-3'>
                         <div className="md:w-1/6 py-2 md:py-12 text-center">
-                            <h5 className="text-xl pb-1 text-black font-medium">About</h5>
+                            <h5 className="primary-font text-3xl pb-1 text-black font-semibold">About</h5>
                             <ul className="list-unstyled">
-                                <li><a href="#" onClick={() => handleNavClick("About Us")}>About Us</a></li>
-                                <li><a href="#" onClick={() => handleNavClick("Product")}>Product</a></li>
-                                <li><a href="#" onClick={() => handleNavClick("Reseller")}>Reseller</a></li>
-                                <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Contact Us</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("About Us")}>About Us</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("Product")}>Product</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("Reseller")}>Reseller</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("Contact Us")}>Contact Us</a></li>
                             </ul>
                         </div>
                         <div className="md:w-1/6 py-2 md:py-12 text-center">
-                            <h5 className="text-xl pb-1 text-black font-medium">Support</h5>
+                            <h5 className="primary-font text-3xl pb-1 text-black font-semibold">Support</h5>
                             <ul className="list-unstyled">
-                                <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Support</a></li>
-                                <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Knowledge base</a></li>
-                                <li><a href="#" onClick={() => handleNavClick("Contact Us")}>Lorem</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("Contact Us")}>Support</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("Contact Us")}>Knowledge base</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("Contact Us")}>Lorem</a></li>
                             </ul>
                         </div>
                         <div className="md:w-1/6 py-2 md:py-12 text-center">
-                            <h5 className="text-xl pb-1 text-black font-medium">Jobs</h5>
+                            <h5 className="primary-font text-3xl pb-1 text-black font-semibold">Jobs</h5>
                             <ul className="list-unstyled">
-                                <li><a href="#">Jobs</a></li>
-                                <li><a href="#" onClick={() => handleNavClick("About Us")}>Our team</a></li>
-                                <li><a href="#">Leadership</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a className="secondary-font text-base" href="#">Jobs</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("About Us")}>Our team</a></li>
+                                <li><a className="secondary-font text-base" href="#">Leadership</a></li>
+                                <li><a className="secondary-font text-base" href="#">Privacy Policy</a></li>
                             </ul>
                         </div>
                         <div className="md:w-1/6 py-2 md:py-12 text-center">
-                            <h5 className="text-xl pb-1 text-black font-medium">Product</h5>
+                            <h5 className="primary-font text-3xl pb-1 text-black font-semibold">Product</h5>
                             <ul className="list-unstyled">
-                                <li><a href="#" onClick={() => handleNavClick("Product")}>GentleMan's</a></li>
-                                <li><a href="#" onClick={() => handleNavClick("Product")}>Essentials</a></li>
-                                <li><a href="#" onClick={() => handleNavClick("Product")}>Masculine Wash</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("Product")}>GentleMan's</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("Product")}>Essentials</a></li>
+                                <li><a className="secondary-font text-base" href="#" onClick={() => handleNavClick("Product")}>Masculine Wash</a></li>
                             </ul>
                         </div>
                     </div>
@@ -76,10 +76,10 @@ export default function Footer({onNavClick, currentPage}) {
                 <hr className="my-4 border-black" />
                 <div className="flex flex-col md:flex-row justify-between px-2 text-center">
                     <div className="">
-                        <p className="mb-0 text-black">Copyright © 2024, Gentleman's Essentials. All Rights Reserved.</p>
+                        <p className="secondary-font text-base mb-0 text-black">Copyright © 2024, Gentleman's Essentials. All Rights Reserved.</p>
                     </div>
                     <div className="">
-                        <p className="mb-0 text-black">
+                        <p className="secondary-font text-base mb-0 text-black">
                             <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
                         </p>
                     </div>

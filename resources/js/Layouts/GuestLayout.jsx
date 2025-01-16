@@ -1,5 +1,4 @@
 import ApplicationLogo from '@/Components/ApplicationLogo';
-import BootstrapLayout from '@/Components/BootstrapLayout';
 import Footer from '@/Components/Footer';
 import GEWrapper from '@/Components/GEWrapper';
 import Header from '@/Components/Header';

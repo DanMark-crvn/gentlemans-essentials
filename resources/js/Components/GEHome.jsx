@@ -22,11 +22,11 @@ export default function GEHome(props) {
         </div>
         <div className='p-2'>
           {/* <h2 className='primary-font'>Confidence Below the Belt</h2> */}
-          <figure class="text-center">
-            <blockquote class="blockquote">
-              <p className='primary-font text-2xl'>Gentleman’s Essentials Masculine Wash</p>
+          <figure className="text-center">
+            <blockquote className="blockquote">
+              <p className='primary-font text-4xl lg:text-5xl'>Gentleman’s Essentials Masculine Wash</p>
             </blockquote>
-            <figcaption class="blockquote-footer border-l-4 pl-4 italic text-gray-700 !text-xl">
+            <figcaption className="blockquote-footer secondary-font border-l-4 pl-4 italic text-gray-700 !text-2xl">
               Confidence Below the Belt
             </figcaption>
           </figure>

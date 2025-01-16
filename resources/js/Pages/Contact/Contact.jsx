@@ -24,9 +24,9 @@ export default function Contact() {
           {/* <MasulineWash animated={false}  /> */}
           <ContactPicture />
           <div className="p-3 md:w-9/12 lg:w-5/12 flex flex-col text-left" data-aos="fade-up" data-aos-duration="1500">
-            <h1 className='secondary-font text-4xl font-medium pb-3 px-3'>Contact</h1>
-            <p className='secondary-font px-3'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
-            <p className='secondary-font px-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>
+            <h1 className='primary-font text-5xl font-semibold pb-3 px-3'>Contact</h1>
+            <p className='secondary-font text-pretty text-lg text-justify tracking-wide py-2 px-3'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
+            <p className='secondary-font text-pretty text-lg text-justify tracking-wide py-2  px-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>
             <div className='mb-3'>
               <div className="flex items-center p-2">
                 <i className="bi bi-geo-alt contactIcon flex items-center text-2xl p-3"></i>
