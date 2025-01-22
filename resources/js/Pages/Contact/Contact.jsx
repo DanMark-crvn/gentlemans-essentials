@@ -77,48 +77,48 @@ export default function Contact() {
                 <button className="btn btn-warning" type="submit">Submit</button>
               </div>
             </form> */}
-            <form class="w-full mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" noValidate onSubmit={handleSubmit}>
-              <div class="relative">
-                <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name</label>
+            <form className="w-full mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" noValidate onSubmit={handleSubmit}>
+              <div className="relative">
+                <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">Full Name</label>
                 <input
                   type="text"
                   id="fullName"
                   name="fullName"
                   placeholder="Enter your full name"
                   required
-                  class="peer w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#f5bf03] focus:border-[#f5bf03]"
+                  className="peer w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#f5bf03] focus:border-[#f5bf03]"
                 />
-                <div class="text-sm text-red-500 peer-invalid:block hidden">
+                <div className="text-sm text-red-500 peer-invalid:block hidden">
                   Please enter your full name.
                 </div>
               </div>
 
-              <div class="relative">
-                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+              <div className="relative">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="Enter your email address"
                   required
-                  class="peer w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#f5bf03] focus:border-[#f5bf03]"
+                  className="peer w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#f5bf03] focus:border-[#f5bf03]"
                 />
-                <div class="text-sm text-red-500 peer-invalid:block hidden">
+                <div className="text-sm text-red-500 peer-invalid:block hidden">
                   Please enter a valid email address.
                 </div>
               </div>
 
-              <div class="relative">
-                <label for="comment" class="block text-sm font-medium text-gray-700">Comment/Inquiry</label>
+              <div className="relative">
+                <label htmlFor="comment" className="block text-sm font-medium text-gray-700">Comment/Inquiry</label>
                 <textarea
                   id="comment"
                   name="comment"
                   placeholder="Write your comment or inquiry"
                   required
-                  class="peer w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#f5bf03] focus:border-[#f5bf03]"
+                  className="peer w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#f5bf03] focus:border-[#f5bf03]"
                   rows="5"
                 ></textarea>
-                <div class="text-sm text-red-500 peer-invalid:block hidden">
+                <div className="text-sm text-red-500 peer-invalid:block hidden">
                   Please enter a comment or inquiry.
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function Contact() {
               <div>
                 <button
                   type="submit"
-                  class="w-full py-3 bg-[#f5bf03] text-white rounded-md hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+                  className="w-full py-3 bg-[#f5bf03] text-white rounded-md hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-300"
                 >
                   Submit
                 </button>

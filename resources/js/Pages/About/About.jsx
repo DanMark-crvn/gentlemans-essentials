@@ -16,7 +16,7 @@ export default function About() {
           <div className=''>
             <AboutPicture />
           </div>
-          <div className="p-3 px-5 lg:w-1/3 flex flex-col md:text-center lg:text-start" data-aos="fade-up" data-aos-duration="1500">
+          <div className="p-3 px-5 lg:w-2/5 flex flex-col md:text-center lg:text-start" data-aos="fade-up" data-aos-duration="1500">
             <h1 className='primary-font text-6xl font-semibold pb-2'>Why Choose Us</h1>
             <p className='secondary-font py-4 text-pretty text-lg text-justify tracking-wide'>At Gentleman's Essential, we understand that personal care is not just about cleanliness—it's about confidence, comfort, and feeling your best, every day. Here's why our masculine wash stands out:</p>
             <ul className="pt-3 list-unstyled">
@@ -34,7 +34,7 @@ export default function About() {
               </li>
             </ul>
             <p className="secondary-font text-lg text-pretty text-justify pt-3">
-              Experience the ultimate in comfort and care with <strong className='primary-font text-lg'>Gentlemans Essential Masculine Wash</strong>.
+              Experience the ultimate in comfort and care with <strong className='primary-font text-2xl'>Gentlemans Essential Masculine Wash</strong>.
             </p>
           </div>
         </div>

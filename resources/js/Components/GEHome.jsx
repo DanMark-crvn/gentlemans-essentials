@@ -9,7 +9,7 @@ export default function GEHome(props) {
     // <div>GEHome</div>
     <>
       <div className='flex flex-col justify-center items-center p-10'>
-        <div className='flex justify-center' data-aos="zoom-in-up" data-aos-duration="3000">
+        <div className='flex justify-center px-5 lg:px-0' data-aos="zoom-in-up" data-aos-duration="3000">
           <video 
             {...props} 
             src={ProductVideo} 
@@ -20,7 +20,7 @@ export default function GEHome(props) {
             className='prod-img max-w-full h-auto sm:w-5/5 md:w-4/5 lg:w-2/5 xl:w-2/5 object-cover rounded-lg' 
           />
         </div>
-        <div className='p-2'>
+        <div className='p-2' data-aos="fade-up" data-aos-duration="3000">
           {/* <h2 className='primary-font'>Confidence Below the Belt</h2> */}
           <figure className="text-center">
             <blockquote className="blockquote">
