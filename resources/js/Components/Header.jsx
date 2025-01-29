@@ -6,10 +6,15 @@ import Switch from './Switch';
 import { Link } from '@inertiajs/react';
 import GEWrapper from './GEWrapper';
 import HomeImage from '../../imgs/Original/GEArt 1.png';
+import InTextLogo from '../../imgs/GE_S FINAL BRANDING (1)-07.png'
+import HomeSubLogo from '../../imgs/MASCULINE WASH.png';
 import ProductImage from '../../imgs/Original/GEArt 6.png';
+import ProductVideo from '../../imgs/Original/GE presents Masculine Wash (draft).mp4'
 import AboutImage from '../../imgs/Original/GEArt 7.png';
 import ServicesImage from '../../imgs/Original/Artboard 3 copy.png';
+import ResellerImage from '../../imgs/Original/Banner.png';
 import ContactImage from '../../imgs/Original/GEArt 1.png';
+import ContactUsImage from '../../imgs/Original/GEArt e.png';
 
 export default function Header({auth = {}, onNavClick, currentPage }) {
     const [isMobile, setIsMobile] = useState(false);
@@ -64,15 +69,18 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
     const pageContent = {
         "Home": {
             title: "GE",
-            subtitle: "Gentlemans Essential Masculine Wash",
-            description: "Confidence Below The Belt",
+            // subtitle: "Gentlemans Essential Masculine Wash", //--> This line I want to change the text into an imageLogo
+            // description: "Confidence Below The Belt", //--> This line I also want to change the text into an sub-imageLogo
+            subtitle: InTextLogo,
+            description: HomeSubLogo,
             image: HomeImage
         },
         "Product": {
             title: "Our Product",
-            subtitle: "Explore Our Premium Products",
-            description: "Discover high-quality products tailored to meet your needs and preferences.",
-            image: ProductImage
+            // subtitle: "Explore Our Premium Products",
+            // description: "Discover high-quality products tailored to meet your needs and preferences.",
+            image: ProductImage,
+            video: ProductVideo
         },
         "About Us": {
             title: "About Us",
@@ -82,15 +90,17 @@ export default function Header({auth = {}, onNavClick, currentPage }) {
         },
         "Reseller": {
             title: "Our Reseller",
-            subtitle: "What We Offer",
-            description: "We provide a range of exceptional services to support your lifestyle.",
-            image: ServicesImage
+            // subtitle: "What We Offer",
+            // description: "We provide a range of exceptional services to support your lifestyle.",
+            // image: ServicesImage
+            image: ResellerImage
         },
         "Contact Us": {
             title: "Contact Us",
-            subtitle: "Get in Touch",
-            description: "We'd love to hear from you. Contact us for any inquiries or assistance.",
-            image: ContactImage
+            // subtitle: "Get in Touch",
+            // description: "We'd love to hear from you. Contact us for any inquiries or assistance.",
+            // image: ContactImage
+            image: ContactUsImage
         }
     };
 

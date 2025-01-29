@@ -31,7 +31,7 @@ export default function Product({ setActivePage }) {
             </div>
           </div>
         </div>
-        <GEHome />
+        {/* <GEHome /> */}
       </div>
     </>
   )
