@@ -19,6 +19,7 @@ import GEHomeWhite from '../../imgs/GEWET.png'
 // import GEHomeWhite from '../../imgs/GEWhite.jpg'
 import HomePicture from '@/Components/HomePicture';
 import HomeWrapperImage from '@/Components/HomeWrapperImage';
+import GESticker from '../../imgs/GE Sticker.png';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here
@@ -32,14 +33,17 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* //TODO: Home Content Here */} 
 
                     {/* //? SECTION 1 */}
-                    <div className='w-full flex justify-center lg:h-screen mb-4'>
-                        <div className="max-w-2xl px-6 lg:max-w-7xl flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-8 py-10">
-                            {/* <MasulineWash animated={false}  /> */}
-                            <HomePicture />
-                            <div className="p-3 w-full lg:w-1/2 flex flex-col text-center lg:text-start" data-aos="fade-up" data-aos-duration="1500">
-                                <h1 className='primary-font text-5xl font-semibold'>Gentlemans Essential Masculine Wash</h1>
-                                <p className='secondary-font py-4 text-pretty text-lg text-justify tracking-wide'>a gentle cleanser used for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of the area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
-                                {/* <p className='secondary-font'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p> */}
+                    <div className='w-full flex justify-center lg:h-screen bg-black'>
+                        <div className="max-w-2xl lg:max-w-full flex flex-col lg:flex-row items-center">
+                            <div className='w-full h-full'>
+                                <HomePicture />
+                            </div>
+                            <div className="p-3 lg:mr-24 w-full lg:w-2/3 flex flex-col justify-center items-center lg:items-end text-center lg:text-start" data-aos="fade-up" data-aos-duration="1500">
+                                <img src={GESticker} alt="GE Sticker" className="w-1/3 h-auto" />
+                                <div className=''>
+                                    <h1 className='primary-font text-7xl font-semibold text-white lg:text-end'>A NEW ERA FOR MEN</h1>
+                                    <p className='secondary-font py-4 text-pretty text-lg text-justify tracking-wide text-white'>The newest premium gentle cleanser for men’s private parts. Infused with aloe vera and anti-bacterial properties that controls odor, moisturizes, and maintains the right pH balanced of men’s private area for long periods of time. For attaining the best men’s intimate grooming use daily on your private parts to have a refreshing and invigorating feeling throughout the day.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -76,34 +80,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* SECTION 2.1 END */}
 
                     {/* //? SECTION 3 */}
-                    {/* <div className='sectionThree w-full flex justify-evenly h-screen backdrop-blur-sm'>
-                        <div className='w-full flex flex-col justify-center items-center text-center relative'  data-aos="fade-right">
-                            Pseudo-element for blurred background
-                            <div 
-                                className='absolute inset-0 bg-cover bg-center' 
-                                style={{ 
-                                    backgroundImage: `url(${GEHomeWhite})`, 
-                                    filter: 'blur(4px)', 
-                                    zIndex: '-1'  // Ensures the background stays behind the content
-                                }}
-                            ></div> 
-                            <GEWhite />
-                        </div>
-                        <div className='w-full flex flex-col justify-center items-center text-center relative'  data-aos="fade-left"> 
-                            Pseudo-element for blurred background
-                            <div 
-                                className='absolute inset-0 bg-cover bg-center' 
-                                style={{ 
-                                    backgroundImage: `url(${GEHomeBlack})`, 
-                                    filter: 'blur(4px)', 
-                                    zIndex: '-1'  // Ensures the background stays behind the content
-                                }}
-                            ></div> 
-                            <GEBlack />
-                        </div>
-                    </div> */}
-                    <div className="flex flex-col md:flex-row w-full h-screen">
-                        {/* Left Section */}
+                    {/* <div className="flex flex-col md:flex-row w-full h-screen">
+                        Left Section
                         <div className="flex-1 bg-gray-900 text-white flex flex-col justify-center items-center px-8 relative" data-aos="fade-right">
                             <img
                             src={GEHomeBlack}
@@ -115,13 +93,13 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                     CONFIDENCE BELOW THE BELT
                                 </h1>
                                 <p className="secondary-font text-2xl mt-2 text-yellow-500 font-bold">Fresh as new</p>
-                                {/* <button className="mt-6 bg-amber-500 text-black py-2 px-4 rounded">
+                                <button className="mt-6 bg-amber-500 text-black py-2 px-4 rounded">
                                     Learn More
-                                </button> */}
+                                </button>
                             </div>
                         </div>
 
-                        {/* Right Section */}
+                        Right Section
                         <div className="flex-1 bg-purple-700 text-white flex flex-col justify-center items-center px-8 relative" data-aos="fade-left">
                             <img
                             src={GEHomeWhite}
@@ -135,12 +113,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 <p className="secondary-font text-2xl mt-2 text-yellow-500 font-bold">
                                     CLEANSING AND INVIGORATING
                                 </p>
-                                {/* <button className="mt-6 bg-amber-500 text-black py-2 px-4 rounded">
+                                <button className="mt-6 bg-amber-500 text-black py-2 px-4 rounded">
                                     Learn More
-                                </button> */}
+                                </button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* SECTION 3 END */}
 
                     {/* //? SECTION 4 */}
