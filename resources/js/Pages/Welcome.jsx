@@ -50,30 +50,58 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     {/* SECTION 1 END */}
 
                     {/* //? SECTION 2 */}
-                    <div className='w-full flex justify-center items-center'>
-                        {/* <GEWet /> */}
+                    <div className='w-full flex justify-center items-start relative'>
                         <HomeWrapperImage homeImageWrapper={false} />
-                        <div className='w-full absolute flex justify-center lg:justify-end items-center text-center text-white'> 
-                            {/* <MasculineWashGold />
-                            <MasculineWashFrontAndBack />
-                            <GEHome /> */}
-                            <div className="lg:w-1/2 flex text-center justify-center" data-aos="fade-up" data-aos-duration="1500">
-                                <h3 className='primary-font text-4xl lg:text-7xl font-medium p-10'>Confidence Where It Counts</h3>
+                        <div className='w-full h-full absolute flex flex-col justify-around lg:justify-between md:justify-between items-center lg:items-end md:items-end text-center text-white'> 
+                            <div className="lg:w-3/5 flex text-center justify-center" data-aos="fade-up" data-aos-duration="1500">
+                                <h3 className='primary-font text-4xl lg:text-8xl lg:tracking-wide md:text-6xl font-semibold p-10'>Sell with <span className='text-yellow-500 secondary-font'>Confidence</span></h3>
+                            </div>
+                            {/* "Become a Reseller" Positioned at Bottom Right */}
+                            <div className="w-full flex justify-center lg:justify-end md:justify-end lg:p-32 lg:px-80 md:p-16 md:px-20">
+                                <button className="text-lg bg-yellow-500 bg-opacity-95 text-black px-4 py-2 rounded-sm font-semibold shadow-2xl">
+                                    Become a Reseller
+                                </button>
                             </div>
                         </div>
+                        {/* Text Wrapper
+                        <div className="absolute w-full top-40 transform -translate-y-1/2 flex flex-col items-center lg:items-end md:items-end text-white px-4 border">
+                            <h3 className="primary-font text-4xl lg:text-8xl md:text-6xl font-semibold">
+                                Sell with <span className="text-yellow-500 secondary-font">Confidence</span>
+                            </h3>
+                        </div>
+
+                        "Become a Reseller" Positioned at Bottom Right
+                        <div className="absolute bottom-6 right-6 lg:right-10 border">
+                            <p className="text-lg bg-yellow-500 px-4 py-2 rounded-lg font-semibold">
+                                Become a Reseller
+                            </p>
+                        </div> */}
                     </div>
                     {/* SECTION 2 END */}
 
                     {/* //? SECTION 2.1 */}
-                    <div className='w-full flex justify-center items-center'>
+                    <div className='w-full flex justify-center items-center relative '>
                         {/* <GEWet /> */}
                         <HomeWrapperImage homeImageWrapper={true} />
-                        <div className='w-full absolute flex justify-center lg:justify-end items-center text-center text-white'> 
-                            {/* <MasculineWashGold />
-                            <MasculineWashFrontAndBack />
-                            <GEHome /> */}
-                            <div className="lg:w-1/2 flex text-center justify-center" data-aos="fade-up" data-aos-duration="1500">
-                                <h3 className='primary-font text-4xl lg:text-7xl font-medium p-10'>Strength You Can Feel</h3>
+                        <div className='w-full absolute flex justify-center lg:justify-end items-center text-center text-white p-4'> 
+                            <div className="lg:w-1/2 flex flex-col text-center lg:text-end justify-center mx-24" data-aos="fade-up" data-aos-duration="1500">
+                                {/* Heading */}
+                                <h3 className='secondary-font text-4xl lg:text-8xl md:text-6xl'>
+                                    BECOME A <span className="text-yellow-400 font-semibold">GENTLEMAN</span>
+                                </h3>
+                                <p className='museum-inline text-4xl lg:text-6xl md:text-6xl mt-2'>ORDER NOW!</p>
+
+                                {/* Shopee & TikTok Icons */}
+                                <div className="flex justify-center lg:justify-end gap-4 mt-6">
+                                    <a href="https://shopee.com" target="_blank" rel="noopener noreferrer">
+                                        {/* <img src="/path-to-your-shopee-icon.png" alt="Shopee" className="w-12 h-12"/> */}
+                                        <i className="bi bi-bag-check-fill text-white text-5xl"></i>
+                                    </a>
+                                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                                        {/* <img src="/path-to-your-tiktok-icon.png" alt="TikTok" className="w-12 h-12"/> */}
+                                        <i className="bi bi-tiktok text-white text-5xl"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

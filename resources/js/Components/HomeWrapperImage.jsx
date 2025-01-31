@@ -4,30 +4,13 @@ import HomePicWrapperTwo from '../../imgs/Original/HomeWrapper2.jpg'
 
 export default function HomeWrapperImage({homeImageWrapper, ...props}) {
   return (
-    // <div>AboutPicture</div>
     <>
-        {/* <div
-            style={{
-            // backgroundImage: `url(${HomePicWrapper})`,
-            backgroundSize: '',
-            backgroundPosition: 'center',
-            width: '100%',
-            height: '100%', // Adjust as needed
-        }}
-        className={`ge-home-wrapper d-flex flex-column justify-content-center align-items-center`}
-        >
-            <img 
-                {...props} 
-                src={homeImageWrapper ? HomePicWrapperTwo : HomePicWrapper} 
-                alt="Home-Wrapper Picture" 
-                className='p-0 object-fit-cover'
-            />
-        </div> */}
         <div
-          className="w-full h-full object-cover bg-center flex flex-col justify-center items-center"
+          className="w-full h-[500px] md:h-[600px] lg:h-[900px] max-h-[80%] bg-center flex flex-col justify-center items-center"
           style={{
               backgroundImage: `url(${HomePicWrapper})`,
               backgroundSize: 'cover',
+              backgroundPosition: "center",
           }}
           data-aos="fade-up"
         >
@@ -35,7 +18,7 @@ export default function HomeWrapperImage({homeImageWrapper, ...props}) {
             {...props} 
             src={homeImageWrapper ? HomePicWrapperTwo : HomePicWrapper} 
             alt="Home-Wrapper Picture" 
-            className="p-0 object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
     </>

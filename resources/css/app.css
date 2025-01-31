@@ -38,6 +38,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Museum-Inline';
+    src: url('../fonts/lt_museum/LTMuseum-Inline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root{
     --primary-color: #3490dc; /* Blue */
@@ -56,6 +62,7 @@
 
     --primary-logo-font: 'Vanguard', sans-serif;
     --secondary-logo-font: 'Museum', sans-serif;
+    --museum-inline-font: 'Museum-Inline', sans-serif;
 }
 .primary-font{
     font-family: var(--primary-logo-font) !important;
@@ -63,7 +70,9 @@
 .secondary-font{
     font-family: var(--secondary-logo-font) !important;
 }
-
+.museum-inline {
+    font-family: var(--museum-inline-font) !important;
+}
 
 
 .bg-color{
