@@ -84,7 +84,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         {/* <GEWet /> */}
                         <HomeWrapperImage homeImageWrapper={true} />
                         <div className='w-full absolute flex justify-center lg:justify-end items-center text-center text-white p-4'> 
-                            <div className="lg:w-1/2 flex flex-col text-center lg:text-end justify-center mx-24" data-aos="fade-up" data-aos-duration="1500">
+                            <div className="lg:w-1/2 flex flex-col text-center lg:text-end justify-center gap-4 mx-24" data-aos="fade-up" data-aos-duration="1500">
                                 {/* Heading */}
                                 <h3 className='secondary-font text-4xl lg:text-8xl md:text-6xl'>
                                     BECOME A <span className="text-yellow-400 font-semibold">GENTLEMAN</span>
@@ -93,13 +93,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
                                 {/* Shopee & TikTok Icons */}
                                 <div className="flex justify-center lg:justify-end gap-4 mt-6">
-                                    <a href="https://shopee.com" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://shopee.com" className='bg-white rounded-lg p-1 transition-transform duration-300 transform hover:scale-125' target="_blank" rel="noopener noreferrer">
                                         {/* <img src="/path-to-your-shopee-icon.png" alt="Shopee" className="w-12 h-12"/> */}
-                                        <i className="bi bi-bag-check-fill text-white text-5xl"></i>
+                                        <img width="48" height="48" src="https://img.icons8.com/color/48/shopee.png" alt="shopee"/>
+                                        {/* <i className="bi bi-bag-check-fill text-white text-5xl"></i> */}
                                     </a>
-                                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://tiktok.com" className='bg-white rounded-lg p-1 transition-transform duration-300 transform hover:scale-125' target="_blank" rel="noopener noreferrer">
                                         {/* <img src="/path-to-your-tiktok-icon.png" alt="TikTok" className="w-12 h-12"/> */}
-                                        <i className="bi bi-tiktok text-white text-5xl"></i>
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/tiktok--v1.png" alt="tiktok--v1"/>
+                                        {/* <i className="bi bi-tiktok text-white text-5xl"></i> */}
                                     </a>
                                 </div>
                             </div>

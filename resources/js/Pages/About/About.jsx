@@ -2,44 +2,51 @@ import MasulineWash from '@/Components/MasulineWash'
 import { Head } from '@inertiajs/react'
 import React from 'react'
 import AboutPicture from '@/Components/AboutPicture'
+import AboutPic from '../../../imgs/Original/AboutPicture.jpg'
 import MeetOurTeam from '@/Components/MeetOurTeam'
+import InTextLogo from '../../../imgs/GE_S FINAL BRANDING (1)-07.png'
 
 export default function About() {
   return (
     // <div>About</div>
     <>
       <Head title="About" />
-      <div className='pb-20'> 
-        {/* Home Content Here */} 
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-8 mb-4 py-10">
-          {/* <MasulineWash animated={false}  /> */}
-          <div className=''>
-            <AboutPicture />
-          </div>
-          <div className="p-3 px-5 lg:w-2/5 flex flex-col md:text-center lg:text-start" data-aos="fade-up" data-aos-duration="1500">
-            <h1 className='primary-font text-6xl font-semibold pb-2'>Why Choose Us</h1>
-            <p className='secondary-font py-4 text-pretty text-lg text-justify tracking-wide'>At Gentleman's Essential, we understand that personal care is not just about cleanliness—it's about confidence, comfort, and feeling your best, every day. Here's why our masculine wash stands out:</p>
-            <ul className="pt-3 list-unstyled">
-              <li className='secondary-font text-pretty text-lg text-justify tracking-normal'>
-                <strong className='secondary-font'>Designed for Men:</strong> Gentle, effective cleansing for daily use.
-              </li>
-              <li className='secondary-font text-pretty text-lg text-justify tracking-normal'>
-                <strong className='secondary-font'>Skin-Friendly Ingredients:</strong> Infused with aloe vera and anti-bacterial properties to soothe, hydrate, and protect.
-              </li>
-              <li className='secondary-font text-pretty text-lg text-justify tracking-normal'>
-                <strong className='secondary-font'>PH-Balanced:</strong> Maintains the ideal balance for comfort and freshness.
-              </li>
-              <li className='secondary-font text-pretty text-lg text-justify tracking-normal'>
-                <strong className='secondary-font'>Long-Lasting Freshness:</strong> Keeps you feeling clean and confident all day.
-              </li>
-            </ul>
-            <p className="secondary-font text-lg text-pretty text-justify pt-3">
-              Experience the ultimate in comfort and care with <strong className='primary-font text-2xl'>Gentlemans Essential Masculine Wash</strong>.
-            </p>
+      <div className=''> 
+        {/* About Content Here */} 
+        {/* //? SECTION 1 */}
+        <div className='w-full flex justify-center lg:h-screen bg-black'>
+          <div className="w-full flex flex-col lg:flex-row items-center">
+            <div className='w-full h-full'>
+              <div className='w-full lg:w-4/5 h-full' data-aos="fade-up" data-aos-duration="1500">
+                <img 
+                  src={AboutPic} 
+                  alt="Home Picture" 
+                  className='p-0 object-cover shadow-lg w-full h-full'
+                />
+              </div>
+            </div>
+            <div className="h-3/4 p-3 lg:mr-24 w-full lg:w-4/5 flex flex-col justify-around items-center lg:items-end text-center lg:text-start" data-aos="fade-up" data-aos-duration="1500">
+              <div className=''>
+                <p className='secondary-font py-4 text-pretty text-lg text-justify tracking-wide text-white'>We are a brand that aims to introduce premium men’s hygiene in the market and every filipino household.</p>
+                <p className='secondary-font py-4 text-pretty text-lg text-justify tracking-wide text-white'>
+                  Historically, the topic of hygiene for men has been given less attention compared to women’s 
+                  hygiene possibly tied with traditional gender stereotypes and societal standards. However, now in the 21st Century, 
+                  this norm is changing as men begin in prioritizing grooming and skincare practices as well and the world would not judge them for it.
+                </p>
+                <p className='secondary-font py-4 text-pretty text-lg font-semibold text-justify tracking-wide text-white'>
+                  Gentleman’s Essentials will be a vessel to bring Filipinos a step closer to the evolutionary movement of personal care.
+                </p>
+              </div>
+              <div className='flex flex-col gap-3'>
+                <img src={InTextLogo} alt="GE-Name" className="" style={{ maxWidth: '110px', height: 'auto', filter: 'invert(1)' }} />
+                <p className='secondary-font text-xs text-center lg:text-end text-white'>EST.2024</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className='flex flex-col pt-4 mt-40'>
-          <h1 className='primary-font text-6xl text-center font-medium' data-aos="fade-up" data-aos-duration="2500">Meet Our Team</h1>
+        {/* SECTION 1 END */}
+        <div className='flex flex-col justify-center items-center py-12 lg:py-24 border border-yellow-500'>
+          <h1 className='primary-font text-6xl text-center font-medium' data-aos="fade-up" data-aos-duration="2500">Meet The Team</h1>
           <MeetOurTeam />
         </div>
       </div>
