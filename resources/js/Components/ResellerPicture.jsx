@@ -9,7 +9,7 @@ export default function ResellerPicture(props) {
                 {...props} 
                 src={ResellerPic} 
                 alt="Reseller Picture" 
-                className='p-0 object-cover rounded-lg max-w-[550px] h-auto'
+                className='p-0 object-cover rounded max-w-[380px] md:max-w-[450px] lg:max-w-[550px] h-auto'
                 // style={{ maxWidth: '550px', height: 'auto' }} 
             />
         </div>

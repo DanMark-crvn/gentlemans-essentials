@@ -6,9 +6,12 @@ import Dally from '../../imgs/Original/Team/Dally.png'
 export default function MeetOurTeam(props) {
   return (
     <>
-      <div className="max-w-screen-xl mx-auto mt-4 p-4 sm:p-6 md:p-8" data-aos="zoom-in" data-aos-duration="1500">        
+      <div 
+        className="max-w-full mx-auto mt-4 p-4 sm:p-6 md:p-8" 
+        // data-aos="zoom-in" data-aos-duration="1500"
+      >        
         {/* Row with team members */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24 md:gap-20">
           {/* Team Member 1 */}
           <div className="text-center flex flex-col">
             <img

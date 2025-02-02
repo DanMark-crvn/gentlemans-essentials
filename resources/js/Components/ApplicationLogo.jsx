@@ -26,8 +26,8 @@ export default function ApplicationLogo({footer = true, ...props}) {
                 <>
                     <div className='flex justify-around items-center text-center'>
                         <div className='w-auto flex justify-center items-center'>
-                            <img {...props} src={PrimaryLogo} alt="GE Logo" className="" style={{ maxWidth: '110px', height: 'auto' }} />
-                            <img {...props} src={InTextLogo} alt="GE-Name" className="" style={{ maxWidth: '110px', height: 'auto' }} />
+                            {/* <img {...props} src={PrimaryLogo} alt="GE Logo" className="" style={{ maxWidth: '110px', height: 'auto', filter: 'invert(1)' }} /> */}
+                            <img {...props} src={InTextLogo} alt="GE-Name" className="" style={{ maxWidth: '200px', height: 'auto', filter: 'invert(1)' }} />
                         </div>
                     </div>
                 </>

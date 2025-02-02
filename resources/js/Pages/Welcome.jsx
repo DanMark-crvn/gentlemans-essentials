@@ -25,6 +25,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here
     const [activePage, setActivePage] = useState('Home');
 
+    // Handle the "Get Yours Now" click
+    const handleGetYoursNowClick = () => {
+        // Change the active page to "Contact Us"
+        setActivePage('Reseller');
+    };
+
     return (
         <GuestLayout setActivePage={setActivePage}>
             <Head title="Welcome" />
@@ -58,9 +64,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </div>
                             {/* "Become a Reseller" Positioned at Bottom Right */}
                             <div className="w-full flex justify-center lg:justify-end md:justify-end lg:p-32 lg:px-80 md:p-16 md:px-20">
-                                <button className="text-lg bg-yellow-500 bg-opacity-95 text-black px-4 py-2 rounded-sm font-semibold shadow-2xl">
+                                <Button onClick={handleGetYoursNowClick} className="text-lg bg-yellow-500 bg-opacity-95 text-black px-4 py-2 rounded-sm font-semibold shadow-2xl">
                                     Become a Reseller
-                                </button>
+                                </Button>
                             </div>
                         </div>
                         {/* Text Wrapper
@@ -191,7 +197,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             )}
             {activePage === 'Reseller' && (
-                <div className='lg:h-screen flex justify-center items-center'> 
+                <div className=''> 
                     {/* Reseller Content Here */} 
                     <Reseller />
                 </div>

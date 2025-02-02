@@ -123,7 +123,8 @@
 }
 
 .footer{
-    background-color: var(--mikado-yellow);
+    /* background-color: var(--mikado-yellow); */
+    background-color: black;
 }
 /* NAVBAR */
 .navbar {
@@ -348,12 +349,12 @@
 
 /* FOOTER */
 .list-unstyled, li, a{
-    color: #333 !important;
+    color: #fff !important;
 }
 @media (max-width: 1022px) {
     .footerLinks{
         display: flex !important;
-        flex-direction: column !important;
+        /* flex-direction: column !important; */
         justify-content: center;
         align-items: center;
     }
