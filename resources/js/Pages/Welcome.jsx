@@ -99,12 +99,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
                                 {/* Shopee & TikTok Icons */}
                                 <div className="flex justify-center lg:justify-end gap-4 mt-6">
-                                    <a href="https://shopee.com" className='bg-white rounded-lg p-1 transition-transform duration-300 transform hover:scale-125' target="_blank" rel="noopener noreferrer">
+                                    <a href="https://shopee.ph/Gentleman's-Essentials-Masculine-Wash-(150ml)-i.1338092442.27558862443" className='bg-white rounded-lg p-1 transition-transform duration-300 transform hover:scale-125' target="_blank" rel="noopener noreferrer">
                                         {/* <img src="/path-to-your-shopee-icon.png" alt="Shopee" className="w-12 h-12"/> */}
                                         <img width="48" height="48" src="https://img.icons8.com/color/48/shopee.png" alt="shopee"/>
                                         {/* <i className="bi bi-bag-check-fill text-white text-5xl"></i> */}
                                     </a>
-                                    <a href="https://tiktok.com" className='bg-white rounded-lg p-1 transition-transform duration-300 transform hover:scale-125' target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.tiktok.com/view/product/1730838579313347519?checksum=eb38a16f7111ec63a3d408009d97e6056ad1df667e6ac95a882ddbb874be8525&og_info=%7B%22title%22%3A%22Gentleman%E2%80%99s+Masculine+Wash+Premium+Invigorating+Men%27s+Grooming+Skin+Care+Essentials%22%2C%22image%22%3A%22https%3A%5C%2F%5C%2Fp16-oec-va.ibyteimg.com%5C%2Ftos-maliva-i-o3syd03w52-us%5C%2F69843244a6994f8d8e76b3b03194327f~tplv-o3syd03w52-resize-webp%3A260%3A260.webp%3Ffrom%3D1826719393%22%7D&sec_user_id=MS4wLjABAAAA3HHLFggAwawdZdHD_TP7bsrMqZdXyrQ_ApXv6gFUdZJ447GAtaUHshbWxmpC6iVS&share_app_id=1180&share_link_id=E1AA76E3-B471-46E2-B56B-001F77C7C9A1&social_share_type=15&timestamp=1732860484&trackParams=%7B%22traffic_source_list%22%3A%5B6%5D%2C%22enter_from_info%22%3A%22product_share_outside%22%2C%22source_page_type%22%3A%22product_share%22%2C%22traffic_source%22%3A6%2C%22enable_shop_tab_popup%22%3A1%7D&tt_from=copy&u_code=EG36MHIJ2D4GJG&ug_btm=b6880%2Cb6661&unique_id=gentlemans.esntls&user_id=7410291067125302277" className='bg-white rounded-lg p-1 transition-transform duration-300 transform hover:scale-125' target="_blank" rel="noopener noreferrer">
                                         {/* <img src="/path-to-your-tiktok-icon.png" alt="TikTok" className="w-12 h-12"/> */}
                                         <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/tiktok--v1.png" alt="tiktok--v1"/>
                                         {/* <i className="bi bi-tiktok text-white text-5xl"></i> */}

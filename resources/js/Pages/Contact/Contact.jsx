@@ -32,10 +32,10 @@ export default function Contact() {
         {/* Contact Content Here */} 
         <div className="relative z-10 flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-8 mb-4 py-10">
           {/* <ContactPicture /> */}
-          <div className="p-3 md:w-9/12 lg:w-5/12 flex flex-col text-left" data-aos="fade-up" data-aos-duration="1500">
+          <div className="p-3 md:w-9/12 lg:w-2/3 flex flex-col text-left" data-aos="fade-up" data-aos-duration="1500">
             <h1 className='primary-font text-5xl font-semibold pb-3 px-3 text-white'>Contact</h1>
-            <p className='secondary-font text-pretty text-lg text-justify tracking-wide py-2 px-3 text-white'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, facilis rem quas odio minima commodi incidunt! Hic veritatis ipsam aspernatur vitae natus. Accusamus aut magnam earum soluta saepe explicabo voluptatibus!</p>
-            <p className='secondary-font text-pretty text-lg text-justify tracking-wide py-2  px-3 text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam incidunt iure ab quia! Facere modi laborum ut distinctio nulla.</p>
+            <p className='secondary-font text-pretty text-lg text-justify tracking-wide py-2 px-3 text-white'>Become a part of the new evolution for men’s essentials! For your grooming and hygiene needs, we will be with you every step of the way.</p>
+            <p className='secondary-font text-pretty text-lg text-justify tracking-wide py-2  px-3 text-white'>Get in touch with us!</p>
             <div className='mb-3 text-white'>
               <div className="flex items-center p-2">
                 <i className="bi bi-geo-alt contactIcon flex items-center text-2xl p-3 text-black"></i>

@@ -21,19 +21,19 @@ export default function Reseller() {
       <Head title="Reseller" />
       <div className='w-full h-full'>
         {/* Reseller Content Here */}
-        <div className='h-full flex justify-center items-center py-12'>
-          <img src={ResellerPic} alt="Reseller Picture" className='w-auto lg:w-1/2 md:w-3/4 object-cover rounded shadow-2xl' />
+        <div className='w-full h-[500px] md:h-[600px] lg:h-[900px] max-h-[80%] bg-center flex justify-center items-center'>
+          <img src={ResellerPic} alt="Reseller Picture" className='w-full h-full object-cover object-center lg:object-[0_40%] shadow-2xl' />
         </div>  
-        <div className="flex flex-col lg:flex-row justify-evenly items-center py-12">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 md:gap-16 justify-evenly items-center py-12">
           <ResellerPicture />
-          <div className="p-3 py-9 lg:p-0 md:px-24 md:py-12 w-full lg:w-2/5" data-aos="fade-up" data-aos-duration="1500">
+          <div className="w-full flex-1" data-aos="fade-up" data-aos-duration="1500">
             {/* <div className='px-10 mx-3 lg:mx-0 flex flex-col items-center lg:items-start'>
               <h1 className='primary-font text-5xl text-pretty text-justify font-semibold pb-2'>Reseller</h1>
               <p className='secondary-font py-4 text-pretty text-lg text-justify tracking-wide'>Experience the ultimate in personal care with Gentleman’s Essential Masculine Wash—designed specifically for men. This gentle cleanser is infused with aloe vera and antibacterial properties to keep you feeling fresh, moisturized, and confident all day long. Its carefully balanced formula controls odor and maintains the right pH, ensuring optimal comfort and hygiene. Make it a part of your daily routine for a refreshing, invigorating experience every time.</p>
             </div> */}
             
             {/* FORM STARTS HERE */}
-            <form className="w-full mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" noValidate onSubmit={handleSubmit}>
+            <form className="w-full lg:w-[85%] md:w-2/3 mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" noValidate onSubmit={handleSubmit}>
               <div className="relative">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                 <input

@@ -33,7 +33,7 @@ export default function Footer({onNavClick, currentPage}) {
                             {/* <a href="#" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-linkedin"></i>
                             </a> */}
-                            <a href="https://www.tiktok.com/@gentlemansessentialsph" target="_blank" rel="noopener noreferrer" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
+                            <a href="https://www.tiktok.com/@gentlemans.essentials.ph" target="_blank" rel="noopener noreferrer" className="me-2 text-3xl transition-transform duration-300 transform hover:scale-125">
                                 <i className="bi bi-tiktok text-white"></i>
                             </a>
                         </div>
