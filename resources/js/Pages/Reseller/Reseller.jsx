@@ -87,7 +87,7 @@ export default function Reseller() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  placeholder="Enter your email address"
+                  placeholder="Enter your phone number"
                   pattern="[0-9]{10,15}" // Enforces only numbers with a length of 10-15
                   required
                   className="peer w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#f5bf03] focus:border-[#f5bf03]"

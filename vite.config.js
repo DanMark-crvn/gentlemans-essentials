@@ -11,8 +11,8 @@ export default defineConfig({
         react(),
     ],
     server: {
-        // host: '192.168.18.30', //home WIFI Ip
-        host: '192.168.18.139', //LAN HOME
+        host: '192.168.18.30', //home WIFI Ip
+        // host: '192.168.18.139', //LAN HOME
         // host: '192.168.1.15', //KEN
         // host: '192.168.18.94', //WIN Ip
         // host: '192.168.1.19', //home Kuya Ip
