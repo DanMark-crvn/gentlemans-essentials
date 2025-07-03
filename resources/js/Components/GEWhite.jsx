@@ -1,4 +1,4 @@
-import GEHomeWhite from '../../imgs/GEWhite.jpg'
+import GEHomeWhite from '../../../public/imgs/GEWhite.jpg'
 
 export default function GEWhite(props) {
   return (

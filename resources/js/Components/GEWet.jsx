@@ -1,4 +1,4 @@
-import WETGE from '../../imgs/WETGE.png'
+import WETGE from '../../../public/imgs/WETGE.png'
 
 export default function GEWet({props}) {
   return (

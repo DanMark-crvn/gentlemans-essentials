@@ -1,4 +1,4 @@
-import MasulineWash from '@/Components/MasulineWash';
+// import MasulineWash from '@/Components/MasulineWash';
 import { Button, Input } from '@headlessui/react';
 import { Head, Link } from '@inertiajs/react';
 import { useState } from 'react';
@@ -7,19 +7,19 @@ import GuestLayout from '@/Layouts/GuestLayout';
 import Product from './Product/Product';
 import Reseller from './Reseller/Reseller';
 import About from './About/About';
-import GEHome from '@/Components/GEHome';
-import WrapperGE from '../../imgs/GEWrapper.png';
-import GEWet from '@/Components/GEWet';
-import WETGE from '../../imgs/WETGE.png';
-import GEBlack from '@/Components/GEBlack';
-import GEWhite from '@/Components/GEWhite';
+// import GEHome from '@/Components/GEHome';
+// import WrapperGE from '../../../public/imgs/GEWrapper.png';
+// import GEWet from '@/Components/GEWet';
+// import WETGE from '../../../public/imgs/WETGE.png';
+// import GEBlack from '@/Components/GEBlack';
+// import GEWhite from '@/Components/GEWhite';
 // import GEHomeBlack from '../../imgs/GEBlack.png'
-import GEHomeBlack from '../../imgs/GEBlackEdited.png'
-import GEHomeWhite from '../../imgs/GEWET.png'
+// import GEHomeBlack from '../../../public/imgs/GEBlackEdited.png'
+// import GEHomeWhite from '../../../public/imgs/GEWET.png'
 // import GEHomeWhite from '../../imgs/GEWhite.jpg'
 import HomePicture from '@/Components/HomePicture';
 import HomeWrapperImage from '@/Components/HomeWrapperImage';
-import GESticker from '../../imgs/GE Sticker.png';
+import GESticker from '../../../public/imgs/GE Sticker.png';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     // Initialize activePage state here

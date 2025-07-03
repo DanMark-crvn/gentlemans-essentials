@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ApplicationLogo from './ApplicationLogo';
-import SubMarkLogo from '../../imgs/GE Sticker.png';
+import SubMarkLogo from '../../../public/imgs/GE Sticker.png';
 
 export default function Footer({onNavClick, currentPage}) {
     const handleNavClick = (pageName) => {

@@ -1,4 +1,4 @@
-import ResellerPic from '../../imgs/Original/GEArt 9.png'
+import ResellerPic from '../../../public/imgs/Original/GEArt 9.png'
 
 export default function ResellerPicture(props) {
   return (

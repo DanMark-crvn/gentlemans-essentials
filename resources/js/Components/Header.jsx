@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import AOS from 'aos';
 import ApplicationLogo from './ApplicationLogo'
-import MasulineWash from '@/Components/MasulineWash';
+// import MasulineWash from '@/Components/MasulineWash';
 import Switch from './Switch';
 import { Link } from '@inertiajs/react';
 import GEWrapper from './GEWrapper';
-import HomeImage from '../../imgs/Original/GEArt 1.png';
-import InTextLogo from '../../imgs/GE_S FINAL BRANDING (1)-07.png'
-import HomeSubLogo from '../../imgs/MASCULINE WASH.png';
-import ProductImage from '../../imgs/Original/GEArt 6.png';
-import ProductVideo from '../../imgs/Original/GE presents Masculine Wash (draft).mp4'
-import AboutImage from '../../imgs/Original/GEArt 7.png';
-import ServicesImage from '../../imgs/Original/Artboard 3 copy.png';
-import ResellerImage from '../../imgs/Original/Banner.png';
-import ContactImage from '../../imgs/Original/GEArt 1.png';
-import ContactUsImage from '../../imgs/Original/GEArt e.png';
+import HomeImage from '../../../public/imgs/Original/GEArt 1.png';
+import InTextLogo from '../../../public/imgs/GE_S FINAL BRANDING (1)-07.png'
+import HomeSubLogo from '../../../public/imgs/MASCULINE WASH.png';
+import ProductImage from '../../../public/imgs/Original/GEArt 6.png';
+import ProductVideo from '../../../public/imgs/Original/GE presents Masculine Wash (draft).mp4'
+import AboutImage from '../../../public/imgs/Original/GEArt 7.png';
+// import ServicesImage from '../../../public/imgs/Original/Artboard 3 copy.png';
+import ResellerImage from '../../../public/imgs/Original/Banner.png';
+// import ContactImage from '../../../public/imgs/Original/GEArt 1.png';
+import ContactUsImage from '../../../public/imgs/Original/GEArt e.png';
 
 export default function Header({auth = {}, onNavClick, currentPage }) {
     const [isMobile, setIsMobile] = useState(false);

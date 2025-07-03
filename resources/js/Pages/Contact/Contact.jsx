@@ -1,8 +1,8 @@
 import { Head } from '@inertiajs/react'
-import MasulineWash from '@/Components/MasulineWash';
+// import MasulineWash from '@/Components/MasulineWash';
 import React from 'react'
-import ContactPicture from '@/Components/ContactPicture';
-import GEWrapper from '../../../imgs/GEWrapper.png';
+// import ContactPicture from '@/Components/ContactPicture';
+import GEWrapper from '../../../../public/imgs/GEWrapper.png';
 
 // Contact.jsx
 export default function Contact() {
@@ -10,11 +10,17 @@ export default function Contact() {
     event.preventDefault();
     const form = event.currentTarget;
 
-    if (form.checkValidity() === false) {
+    // if (form.checkValidity() === false) {
+    //   event.stopPropagation();
+    // }
+    if (!form.checkValidity()) {
       event.stopPropagation();
+      form.classList.add('was-validated');
+      return;
     }
     
     form.classList.add('was-validated');
+    form.submit(); // Manually triggers native POST to Formspree
   };
   return (
     <>
@@ -86,7 +92,7 @@ export default function Contact() {
                 <button className="btn btn-warning" type="submit">Submit</button>
               </div>
             </form> */}
-            <form className="w-full mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" noValidate onSubmit={handleSubmit}>
+            <form className="w-full mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" method='POST' action={"https://formspree.io/f/mdkzjlvr"} noValidate onSubmit={handleSubmit}>
               <div className="relative">
                 <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">Full Name</label>
                 <input

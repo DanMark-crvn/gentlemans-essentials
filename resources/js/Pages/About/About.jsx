@@ -1,10 +1,10 @@
-import MasulineWash from '@/Components/MasulineWash'
+// import MasulineWash from '@/Components/MasulineWash'
 import { Head } from '@inertiajs/react'
 import React from 'react'
-import AboutPicture from '@/Components/AboutPicture'
-import AboutPic from '../../../imgs/Original/AboutPicture.jpg'
+// import AboutPicture from '@/Components/AboutPicture'
+import AboutPic from '../../../../public/imgs/Original/AboutPicture.jpg'
 import MeetOurTeam from '@/Components/MeetOurTeam'
-import InTextLogo from '../../../imgs/GE_S FINAL BRANDING (1)-07.png'
+import InTextLogo from '../../../../public/imgs/GE_S FINAL BRANDING (1)-07.png'
 
 export default function About() {
   return (
@@ -47,7 +47,7 @@ export default function About() {
         {/* SECTION 1 END */}
         <div className='flex flex-col justify-center items-center py-12 lg:py-24'>
           {/* <h1 className='secondary-font text-6xl text-center font-medium bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-clip-text text-transparent shadow-[2px_2px_4px_rgba(0,0,0,0.8)]' data-aos="fade-up" data-aos-duration="2500">Meet The Team</h1> */}
-          <h1 className="museum-inline relative text-center text-6xl lg:text-8xl md:text-8xl font-bold bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-clip-text text-transparent drop-shadow-[4px_4px_4px_rgba(0,0,0,0.7)]">
+          <h1 className="museum-inline relative text-center text-6xl lg:text-8xl md:text-8xl font-medium bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728] bg-clip-text text-transparent drop-shadow-[4px_4px_4px_rgba(0,0,0,0.7)]">
             MEET THE TEAM
           </h1>
           <MeetOurTeam />

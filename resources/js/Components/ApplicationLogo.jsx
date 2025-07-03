@@ -1,6 +1,6 @@
-import PrimaryLogo from '../../imgs/GE_S FINAL BRANDING (1)-01.png'
-import InTextLogo from '../../imgs/GE_S FINAL BRANDING (1)-07.png'
-import SubMarkLogo from '../../imgs/GE Sticker.png'
+// import PrimaryLogo from '../../../public/imgs/GE_S FINAL BRANDING (1)-01.png'
+import InTextLogo from '../../../public/imgs/GE_S FINAL BRANDING (1)-07.png'
+import SubMarkLogo from '../../../public/imgs/GE Sticker.png'
 
 export default function ApplicationLogo({footer = true, ...props}) {
     return (        

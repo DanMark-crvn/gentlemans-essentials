@@ -1,7 +1,7 @@
-import Samer from '../../imgs/Original/Team/Samer.jpg'
-import Franchesca from '../../imgs/Original/Team/Franchesca.jpg'
-import XYHLEI from '../../imgs/Original/Team/XYHLEI.jpg'
-import Dally from '../../imgs/Original/Team/Dally.png'
+import Samer from '../../../public/imgs/Original/Team/Samer.jpg'
+import Franchesca from '../../../public/imgs/Original/Team/Franchesca.jpg'
+import XYHLEI from '../../../public/imgs/Original/Team/XYHLEI.jpg'
+import Dally from '../../../public/imgs/Original/Team/Dally.png'
 
 export default function MeetOurTeam(props) {
   return (

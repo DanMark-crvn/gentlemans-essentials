@@ -1,4 +1,4 @@
-import GEHomeBlack from '../../imgs/GEBlack.png'
+import GEHomeBlack from '../../../public/imgs/GEBlack.png'
 
 export default function GEBlack(props) {
   return (

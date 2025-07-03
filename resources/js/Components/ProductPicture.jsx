@@ -1,4 +1,4 @@
-import ProductPic from '../../imgs/Original/GEArt 4.png'
+import ProductPic from '../../../public/imgs/Original/GEArt 4.png'
 
 export default function ProductPicture(props) {
   return (

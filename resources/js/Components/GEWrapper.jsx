@@ -1,5 +1,5 @@
 // import WrapperGE from '../../imgs/Original/GEArt 1.png'
-import ProductImage from '../../imgs/Original/GEArt 6.png';
+import ProductImage from '../../../public/imgs/Original/GEArt 6.png';
 
 export default function GEWrapper({props, selectedPage, pageContent}) {
   const currentPageContent = pageContent[selectedPage];

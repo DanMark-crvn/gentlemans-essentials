@@ -1,4 +1,4 @@
-import ContactPic from '../../imgs/About.jpg'
+import ContactPic from '../../../public/imgs/About.jpg'
 
 export default function ContactPicture(props) {
   return (

@@ -1,6 +1,6 @@
 // import HomePicWrapper from '../../imgs/About.jpg'
-import HomePicWrapper from '../../imgs/Original/HomeWrapper1.jpg'
-import HomePicWrapperTwo from '../../imgs/Original/HomeWrapper2.jpg'
+import HomePicWrapper from '../../../public/imgs/Original/HomeWrapper1.jpg'
+import HomePicWrapperTwo from '../../../public/imgs/Original/HomeWrapper2.jpg'
 
 export default function HomeWrapperImage({homeImageWrapper, ...props}) {
   return (

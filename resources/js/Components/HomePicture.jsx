@@ -1,5 +1,5 @@
 // import HomePic from '../../imgs/About.jpg'
-import HomePic from '../../imgs/Original/Artboard 4.png'
+import HomePic from '../../../public/imgs/Original/Artboard 4.png'
 
 export default function HomePicture(props) {
   return (

@@ -1,5 +1,5 @@
 // import AboutPic from '../../imgs/About.jpg'
-import AboutPic from '../../imgs/Original/Artboard 4 copy 2.png'
+import AboutPic from '../../../public/imgs/Original/Artboard 4 copy 2.png'
 
 export default function AboutPicture(props) {
   return (

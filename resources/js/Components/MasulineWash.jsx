@@ -1,4 +1,4 @@
-import MWFront from '../../imgs/GE Masculine Wash-resize.png'
+import MWFront from '../../../public/imgs/GE Masculine Wash-resize.png'
 
 export default function MasulineWash({animated = true, loading = false, ...props}) {
   return (

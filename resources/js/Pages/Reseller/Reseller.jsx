@@ -1,19 +1,25 @@
 import ResellerPicture from '@/Components/ResellerPicture'
-import MasulineWash from '@/Components/MasulineWash'
+// import MasulineWash from '@/Components/MasulineWash'
 import { Head } from '@inertiajs/react'
 import React from 'react'
-import ResellerPic from '../../../imgs/Original/ResellerPic.jpg'
+import ResellerPic from '../../../../public/imgs/Original/ResellerPic.jpg'
 
 export default function Reseller() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.currentTarget;
 
-    if (form.checkValidity() === false) {
+    // if (form.checkValidity() === false) {
+    //   event.stopPropagation();
+    // }
+    if (!form.checkValidity()) {
       event.stopPropagation();
+      form.classList.add('was-validated');
+      return;
     }
-    
+
     form.classList.add('was-validated');
+    form.submit(); // Manually triggers native POST to Formspree
   };
   return (
     // <div>Reseller</div>
@@ -33,7 +39,7 @@ export default function Reseller() {
             </div> */}
             
             {/* FORM STARTS HERE */}
-            <form className="w-full lg:w-[85%] md:w-2/3 mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" noValidate onSubmit={handleSubmit}>
+            <form className="w-full lg:w-[85%] md:w-2/3 mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" method='POST' action={"https://formspree.io/f/mrbkdavr"} noValidate onSubmit={handleSubmit}>
               <div className="relative">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                 <input
