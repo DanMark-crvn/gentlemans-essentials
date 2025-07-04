@@ -35,7 +35,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
         <GuestLayout setActivePage={setActivePage}>
             <Head title="Welcome" />
             {activePage === 'Home' && (
-                <div className='home w-full flex flex-col items-center justify-center'> 
+                <div className='home w-full flex flex-col items-center justify-center bg-[#0A0203]'> 
                     {/* //TODO: Home Content Here */} 
 
                     {/* //? SECTION 1 */}

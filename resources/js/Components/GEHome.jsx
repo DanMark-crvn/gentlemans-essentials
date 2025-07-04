@@ -10,7 +10,7 @@ export default function GEHome(props) {
   return (
     <>
     {/* //? SECTION 3 */}
-    <div className="relative flex flex-col md:flex-row w-full h-screen">
+    <div className="relative flex flex-col md:flex-row w-full h-screen bg-black">
       {/* Left Section */}
       <div className="flex-1 bg-gray-900 text-white flex flex-col justify-center items-center relative" data-aos="fade-right">
         <img
