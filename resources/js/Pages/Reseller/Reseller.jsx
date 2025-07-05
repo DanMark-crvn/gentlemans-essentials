@@ -39,7 +39,7 @@ export default function Reseller() {
             </div> */}
             
             {/* FORM STARTS HERE */}
-            <form className="w-full lg:w-[85%] md:w-2/3 mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" method='POST' action={"https://formspree.io/f/mrbkdavr"} noValidate onSubmit={handleSubmit}>
+            <form className="w-full lg:w-[85%] md:w-2/3 mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" method='POST' action={"https://formspree.io/f/xwpbjpgj"} noValidate onSubmit={handleSubmit}>
               <div className="relative">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                 <input

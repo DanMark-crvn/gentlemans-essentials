@@ -92,7 +92,7 @@ export default function Contact() {
                 <button className="btn btn-warning" type="submit">Submit</button>
               </div>
             </form> */}
-            <form className="w-full mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" method='POST' action={"https://formspree.io/f/mdkzjlvr"} noValidate onSubmit={handleSubmit}>
+            <form className="w-full mx-auto p-6 bg-white rounded-lg shadow-md space-y-6" method='POST' action={"https://formspree.io/f/mblyelnn"} noValidate onSubmit={handleSubmit}>
               <div className="relative">
                 <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">Full Name</label>
                 <input
